@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="es" id="html-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Aury Díaz & Asociados | Estudio Jurídico de Alta Estrategia | Cali, Colombia</title>
+  <meta name="description" content="Defensa penal de élite y estrategia jurídica integral. Representación internacional para colombianos en el exterior, habeas data financiero y red Of Counsel multidisciplinaria. Liderado por Aury Fernán Díaz Alarcón — Magíster en Derecho, Especialista en Derecho Penal.">
+  <meta name="keywords" content="abogado penal Cali, defensa penal Colombia, habeas data financiero, representación legal extranjeros, abogado sistema acusatorio, Aury Diaz abogado">
+  <meta name="theme-color" content="#1B3B6F">
+  <meta property="og:title" content="Aury Díaz & Asociados | Estudio Jurídico de Alta Estrategia">
+  <meta property="og:description" content="Defensa penal de élite. Representación internacional. Habeas data financiero. Cali, Colombia.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --navy: #1B3B6F;
+      --navy-dark: #0D1E3D;
+      --navy-light: #2A4F8F;
+      --gold: #C9A961;
+      --gold-light: #E0C882;
+      --gold-dark: #A8893E;
+      --carbon: #2C3E50;
+      --white: #FFFFFF;
+      --off-white: #F8F9FA;
+      --light-gray: #EEF1F5;
+      --mid-gray: #8A97AA;
+      --text: #1A1A2E;
+      --crimson: #8B1A2E;
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* i18n hidden/visible */
+    [data-lang] { display: none; }
+    .lang-es [data-lang="es"], .lang-en [data-lang="en"] { display: revert; }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'Source Sans 3', sans-serif; color: var(--text); background: var(--white); overflow-x: hidden; line-height: 1.7; }
+
+    /* ═══════════════════ HEADER ═══════════════════ */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(8, 15, 32, 0.97); backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(201,169,97,0.2);
+      transition: var(--transition);
+    }
+    nav { max-width: 1400px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .logo-icon { width: 38px; height: 38px; }
+    .logo-text { display: flex; flex-direction: column; gap: 1px; }
+    .logo-main { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--white); letter-spacing: 0.02em; line-height: 1.1; }
+    .logo-sub { font-family: 'Montserrat', sans-serif; font-size: 0.54rem; font-weight: 600; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; }
+
+    .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a {
+      font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500;
+      color: rgba(255,255,255,0.78); text-decoration: none; padding: 8px 11px; border-radius: 4px;
+      letter-spacing: 0.06em; text-transform: uppercase; transition: var(--transition); white-space: nowrap;
+    }
+    .nav-links > li > a:hover, .nav-links > li.active > a { color: var(--gold); }
+    .nav-links > li > a.has-sub::after { content: ' ▾'; font-size: 0.58rem; opacity: 0.7; }
+
+    /* MEGA MENU */
+    .mega-menu {
+      display: none; position: absolute; top: calc(100% + 6px); left: 50%; transform: translateX(-50%);
+      background: rgba(6,14,28,0.99); backdrop-filter: blur(20px);
+      border: 1px solid rgba(201,169,97,0.18); border-radius: 12px;
+      padding: 32px 36px; min-width: 860px; box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+      grid-template-columns: repeat(3, 1fr); gap: 36px;
+    }
+    .nav-links > li:hover .mega-menu { display: grid; animation: fadeDown 0.22s ease; }
+    @keyframes fadeDown { from { opacity: 0; transform: translateX(-50%) translateY(-10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+    .mega-col h4 {
+      font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700;
+      color: var(--gold); text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 14px;
+      padding-bottom: 10px; border-bottom: 1px solid rgba(201,169,97,0.2);
+    }
+    .mega-col ul { list-style: none; }
+    .mega-col ul li { margin-bottom: 7px; }
+    .mega-col ul li a {
+      font-family: 'Source Sans 3', sans-serif; font-size: 0.84rem; color: rgba(255,255,255,0.72);
+      text-decoration: none; transition: var(--transition); display: flex; align-items: center; gap: 7px;
+    }
+    .mega-col ul li a:hover { color: var(--white); padding-left: 4px; }
+    .mega-col ul li a.featured { color: var(--white); font-weight: 600; }
+    .mega-col ul li a.featured::before { content: '★'; color: var(--gold); font-size: 0.65rem; flex-shrink: 0; }
+
+    /* DROPDOWN */
+    .dropdown {
+      display: none; position: absolute; top: calc(100% + 6px); left: 0;
+      background: rgba(6,14,28,0.99); border: 1px solid rgba(201,169,97,0.18); border-radius: 8px;
+      padding: 10px 0; min-width: 240px; box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    }
+    .nav-links > li:hover .dropdown { display: block; animation: fadeDown 0.2s ease; }
+    .dropdown a {
+      display: block; padding: 10px 20px; font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.87rem; color: rgba(255,255,255,0.78); text-decoration: none; transition: var(--transition);
+    }
+    .dropdown a:hover { background: rgba(201,169,97,0.08); color: var(--gold); padding-left: 26px; }
+
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .lang-flags { display: flex; align-items: center; gap: 8px; }
+    .lang-btn {
+      display: flex; align-items: center; gap: 5px; background: none; border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 4px; padding: 5px 10px; cursor: pointer; transition: var(--transition);
+      font-family: 'Montserrat', sans-serif; font-size: 0.66rem; font-weight: 600; color: rgba(255,255,255,0.6);
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .lang-btn:hover, .lang-btn.active { border-color: var(--gold); color: var(--gold); }
+    .lang-btn img { width: 18px; height: 12px; border-radius: 2px; object-fit: cover; }
+    .btn-cta {
+      font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 11px 20px; border-radius: 4px; cursor: pointer; text-decoration: none;
+      background: var(--gold); color: var(--navy-dark); border: none; transition: var(--transition); white-space: nowrap;
+    }
+    .btn-cta:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,169,97,0.45); }
+
+    /* HAMBURGER */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
+    .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--transition); display: block; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* MOBILE NAV */
+    .mobile-nav {
+      display: none; position: fixed; top: 76px; left: 0; right: 0; bottom: 0;
+      background: rgba(6,14,28,0.99); overflow-y: auto; padding: 24px 24px 40px; z-index: 999;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a {
+      display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-family: 'Montserrat', sans-serif; font-size: 0.88rem; font-weight: 500;
+      color: rgba(255,255,255,0.8); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .mobile-nav a:hover { color: var(--gold); }
+    .mobile-nav .mobile-section { margin-bottom: 8px; font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 700; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; margin-top: 24px; padding-bottom: 6px; }
+    .mobile-nav .mobile-cta { margin-top: 24px; display: block; text-align: center; background: var(--gold); color: var(--navy-dark); padding: 16px; border-radius: 4px; font-weight: 700; }
+    .mobile-lang { display: flex; gap: 10px; margin-top: 20px; }
+
+    /* ═══════════════════ HERO ═══════════════════ */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #04080F 0%, #0B1929 35%, #102238 60%, #1B3B6F 100%);
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 55% at 65% 35%, rgba(201,169,97,0.07) 0%, transparent 70%),
+                  radial-gradient(ellipse 45% 45% at 15% 85%, rgba(27,59,111,0.4) 0%, transparent 60%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.025;
+      background-image: linear-gradient(rgba(201,169,97,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,97,1) 1px, transparent 1px);
+      background-size: 70px 70px;
+    }
+    .hero-container { max-width: 1400px; margin: 0 auto; padding: 0 40px; width: 100%; position: relative; z-index: 2; padding-top: 76px; display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: center; min-height: 100vh; }
+    .hero-content { }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 10px; background: rgba(201,169,97,0.08);
+      border: 1px solid rgba(201,169,97,0.28); border-radius: 50px; padding: 8px 18px; margin-bottom: 36px;
+      animation: fadeUp 0.8s ease 0.2s both;
+    }
+    .hero-badge span { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 600; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; }
+    .hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; animation: pulse 2s infinite; flex-shrink: 0; }
+    @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.3; transform: scale(0.8); } }
+    .hero h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 4.8vw, 4.2rem); font-weight: 700;
+      color: var(--white); line-height: 1.14; margin-bottom: 26px; animation: fadeUp 0.8s ease 0.4s both;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-sub {
+      font-family: 'Source Sans 3', sans-serif; font-size: 1.12rem; font-weight: 300; color: rgba(255,255,255,0.68);
+      line-height: 1.85; max-width: 580px; margin-bottom: 44px; animation: fadeUp 0.8s ease 0.6s both;
+    }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeUp 0.8s ease 0.8s both; }
+    .btn-primary {
+      font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 15px 30px; background: var(--gold); color: var(--navy-dark);
+      border: none; border-radius: 4px; cursor: pointer; text-decoration: none; transition: var(--transition);
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(201,169,97,0.4); }
+    .btn-secondary {
+      font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 15px 30px; background: transparent; color: var(--white);
+      border: 1px solid rgba(255,255,255,0.35); border-radius: 4px; cursor: pointer; text-decoration: none; transition: var(--transition);
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-photo-card {
+      background: linear-gradient(180deg, rgba(27,59,111,0.3) 0%, rgba(13,30,61,0.8) 100%);
+      border: 1px solid rgba(201,169,97,0.18); border-radius: 12px; overflow: hidden;
+      animation: fadeUp 0.8s ease 0.6s both; position: relative;
+    }
+    .hero-photo-inner {
+      aspect-ratio: 3/4; background: linear-gradient(135deg, #1a2d4a 0%, #0d1e3d 100%);
+      display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+    }
+    .hero-photo-inner img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .hero-photo-placeholder { text-align: center; color: rgba(255,255,255,0.25); padding: 40px; }
+    .hero-photo-placeholder i { font-size: 5rem; margin-bottom: 16px; display: block; }
+    .hero-photo-placeholder p { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.8; }
+    .hero-photo-tag {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 24px;
+      background: linear-gradient(transparent, rgba(6,14,28,0.95));
+    }
+    .hero-photo-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--white); }
+    .hero-photo-role { font-family: 'Montserrat', sans-serif; font-size: 0.63rem; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 3px; }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      background: rgba(201,169,97,0.12); border-top: 1px solid rgba(201,169,97,0.15);
+    }
+    .stat-item { padding: 16px 20px; background: rgba(6,14,28,0.6); text-align: center; }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; color: var(--gold); display: block; line-height: 1; }
+    .stat-label { font-family: 'Montserrat', sans-serif; font-size: 0.56rem; font-weight: 500; color: rgba(255,255,255,0.45); letter-spacing: 0.09em; text-transform: uppercase; margin-top: 4px; display: block; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ═══════════════════ TRUST BAR ═══════════════════ */
+    .trust-bar {
+      background: var(--navy-dark); border-top: 1px solid rgba(201,169,97,0.12); border-bottom: 1px solid rgba(201,169,97,0.12);
+      padding: 18px 0;
+    }
+    .trust-bar-inner { max-width: 1400px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; }
+    .trust-item span { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; color: rgba(255,255,255,0.6); letter-spacing: 0.06em; text-transform: uppercase; }
+    .trust-item i { color: var(--gold); font-size: 0.95rem; }
+    .trust-sep { width: 1px; height: 24px; background: rgba(201,169,97,0.2); }
+
+    /* ═══════════════════ SECTIONS COMMON ═══════════════════ */
+    section { padding: 90px 0; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+    .section-badge {
+      font-family: 'Montserrat', sans-serif; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 14px; display: block;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+      font-weight: 700; color: var(--navy); line-height: 1.22; margin-bottom: 18px;
+    }
+    .section-title.light { color: var(--white); }
+    .section-sub {
+      font-family: 'Source Sans 3', sans-serif; font-size: 1.02rem; color: var(--mid-gray);
+      line-height: 1.8; max-width: 600px; margin-bottom: 56px;
+    }
+    .section-sub.light { color: rgba(255,255,255,0.62); }
+    .gold-line { width: 48px; height: 3px; background: var(--gold); margin-bottom: 26px; }
+
+    /* ═══════════════════ MACRO-ÁREAS ═══════════════════ */
+    .areas-section { background: var(--off-white); }
+    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 0; }
+    .area-card {
+      background: var(--white); padding: 44px 38px; position: relative; overflow: hidden;
+      transition: var(--transition); cursor: pointer;
+    }
+    .area-card::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+      background: var(--gold); transform: scaleY(0); transition: var(--transition); transform-origin: bottom;
+    }
+    .area-card:hover::before { transform: scaleY(1); }
+    .area-card:hover { background: var(--navy); box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+    .area-card:hover .area-num, .area-card:hover .area-title, .area-card:hover .area-desc { color: var(--white); }
+    .area-card:hover .area-icon { background: rgba(201,169,97,0.15); }
+    .area-num { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 26px; text-transform: uppercase; }
+    .area-icon { width: 58px; height: 58px; background: var(--light-gray); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 26px; font-size: 1.7rem; transition: var(--transition); }
+    .area-title { font-family: 'Playfair Display', serif; font-size: 1.28rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; line-height: 1.3; transition: var(--transition); }
+    .area-desc { font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; color: var(--mid-gray); line-height: 1.72; margin-bottom: 28px; transition: var(--transition); }
+    .area-items { list-style: none; margin-bottom: 28px; }
+    .area-items li {
+      font-family: 'Source Sans 3', sans-serif; font-size: 0.83rem; color: var(--mid-gray);
+      padding: 6px 0; border-bottom: 1px solid var(--light-gray); display: flex; align-items: center; gap: 9px; transition: var(--transition);
+    }
+    .area-card:hover .area-items li { color: rgba(255,255,255,0.62); border-color: rgba(255,255,255,0.08); }
+    .area-items li.featured { color: var(--carbon); font-weight: 600; }
+    .area-card:hover .area-items li.featured { color: var(--gold); }
+    .area-items li::before { content: '→'; font-size: 0.72rem; color: var(--gold); opacity: 0.55; flex-shrink: 0; }
+    .area-items li.featured::before { opacity: 1; }
+    .area-link {
+      display: inline-flex; align-items: center; gap: 8px; font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold); text-decoration: none; transition: var(--transition);
+    }
+    .area-link:hover { gap: 13px; }
+
+    /* MODAL for area details */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(4,8,16,0.88); z-index: 2000;
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.open { display: flex; animation: fadeIn 0.25s ease; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .modal-box {
+      background: var(--navy-dark); border: 1px solid rgba(201,169,97,0.2); border-radius: 12px;
+      max-width: 760px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 48px 48px 40px;
+      position: relative; animation: modalUp 0.3s ease;
+    }
+    @keyframes modalUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .modal-close {
+      position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.06); border: none;
+      width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 1.1rem; color: rgba(255,255,255,0.6);
+      display: flex; align-items: center; justify-content: center; transition: var(--transition);
+    }
+    .modal-close:hover { background: rgba(201,169,97,0.15); color: var(--gold); }
+    .modal-badge { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+    .modal-title { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+    .modal-desc { font-family: 'Source Sans 3', sans-serif; font-size: 0.97rem; color: rgba(255,255,255,0.68); line-height: 1.8; margin-bottom: 30px; }
+    .modal-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; margin-bottom: 32px; }
+    .modal-list li { font-family: 'Source Sans 3', sans-serif; font-size: 0.88rem; color: rgba(255,255,255,0.75); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+    .modal-list li::before { content: '✦'; color: var(--gold); font-size: 0.6rem; flex-shrink: 0; margin-top: 4px; }
+    .modal-list li.featured { color: var(--white); font-weight: 600; }
+    .modal-norm { background: rgba(201,169,97,0.06); border: 1px solid rgba(201,169,97,0.15); border-radius: 8px; padding: 18px 22px; margin-bottom: 28px; }
+    .modal-norm h5 { font-family: 'Montserrat', sans-serif; font-size: 0.66rem; font-weight: 700; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; }
+    .modal-norm p { font-family: 'Source Sans 3', sans-serif; font-size: 0.85rem; color: rgba(255,255,255,0.58); line-height: 1.7; }
+    .modal-cta { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--navy-dark); padding: 14px 28px; border-radius: 4px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; transition: var(--transition); }
+    .modal-cta:hover { background: var(--gold-light); }
+
+    /* ═══════════════════ DIRECTOR ═══════════════════ */
+    .director-section { background: var(--navy-dark); padding: 90px 0; }
+    .director-grid { display: grid; grid-template-columns: 400px 1fr; gap: 70px; align-items: start; }
+    .director-photo {
+      position: relative; aspect-ratio: 3/4; background: linear-gradient(135deg, var(--navy) 0%, var(--carbon) 100%);
+      border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center;
+    }
+    .director-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .director-photo-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: rgba(255,255,255,0.25); padding: 40px; text-align: center; }
+    .director-photo-placeholder i { font-size: 4.5rem; }
+    .director-photo-placeholder p { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; line-height: 1.7; }
+    .director-photo::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 35%;
+      background: linear-gradient(transparent, rgba(6,14,28,0.85));
+    }
+    .director-photo-tag {
+      position: absolute; bottom: 22px; left: 22px; z-index: 2;
+      background: var(--gold); padding: 9px 16px; border-radius: 3px;
+    }
+    .director-photo-tag span { font-family: 'Montserrat', sans-serif; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.12em; color: var(--navy-dark); text-transform: uppercase; }
+    .director-content { color: var(--white); }
+    .director-name { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .director-role { font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 500; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 28px; }
+    .director-bio { font-family: 'Source Sans 3', sans-serif; font-size: 0.98rem; color: rgba(255,255,255,0.7); line-height: 1.85; margin-bottom: 36px; }
+    .credentials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+    .credential-item { background: rgba(255,255,255,0.04); border: 1px solid rgba(201,169,97,0.15); border-radius: 8px; padding: 16px 18px; }
+    .credential-year { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; color: var(--gold); margin-bottom: 4px; }
+    .credential-title { font-family: 'Source Sans 3', sans-serif; font-size: 0.83rem; font-weight: 600; color: var(--white); margin-bottom: 2px; line-height: 1.35; }
+    .credential-uni { font-family: 'Source Sans 3', sans-serif; font-size: 0.76rem; color: rgba(255,255,255,0.48); }
+    .of-counsel { background: rgba(201,169,97,0.05); border: 1px solid rgba(201,169,97,0.18); border-radius: 8px; padding: 22px 26px; }
+    .of-counsel h4 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+    .of-counsel p { font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; color: rgba(255,255,255,0.62); line-height: 1.75; }
+
+    /* ═══════════════════ SOLUCIONES ═══════════════════ */
+    .soluciones-section { background: var(--white); }
+    .sol-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .sol-card {
+      border: 1px solid var(--light-gray); border-radius: 10px; padding: 36px 30px;
+      transition: var(--transition); position: relative; overflow: hidden;
+    }
+    .sol-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transition: var(--transition); }
+    .sol-card:hover::after { transform: scaleX(1); }
+    .sol-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.08); transform: translateY(-4px); }
+    .sol-icon { font-size: 2.2rem; margin-bottom: 20px; display: block; }
+    .sol-title { font-family: 'Playfair Display', serif; font-size: 1.18rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .sol-desc { font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; color: var(--mid-gray); line-height: 1.75; }
+
+    /* ═══════════════════ SERVICIOS ESTRATÉGICOS ═══════════════════ */
+    .servicios-estrategicos { background: linear-gradient(135deg, #0b1929 0%, #1B3B6F 100%); }
+    .service-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .service-feature {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(201,169,97,0.2); border-radius: 12px;
+      padding: 40px 36px; transition: var(--transition);
+    }
+    .service-feature:hover { background: rgba(255,255,255,0.07); border-color: rgba(201,169,97,0.4); transform: translateY(-3px); }
+    .service-feature h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--white); margin-bottom: 14px; line-height: 1.35; }
+    .service-feature p { font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: rgba(255,255,255,0.65); line-height: 1.8; margin-bottom: 20px; }
+    .service-feature ul { list-style: none; margin-bottom: 24px; }
+    .service-feature ul li { font-family: 'Source Sans 3', sans-serif; font-size: 0.88rem; color: rgba(255,255,255,0.72); padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: flex-start; gap: 10px; }
+    .service-feature ul li:last-child { border-bottom: none; }
+    .service-link {
+      display: inline-flex; align-items: center; gap: 8px; font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold); text-decoration: none; transition: var(--transition); border-bottom: 1px solid rgba(201,169,97,0.3); padding-bottom: 2px;
+    }
+    .service-link:hover { gap: 14px; border-color: var(--gold); }
+
+    /* HABEAS DATA STEPS */
+    .hd-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 28px; }
+    .hd-step { background: rgba(201,169,97,0.06); border: 1px solid rgba(201,169,97,0.12); border-radius: 8px; padding: 16px; text-align: center; }
+    .hd-step-num { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--gold); display: block; }
+    .hd-step-text { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 600; color: rgba(255,255,255,0.6); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; display: block; }
+
+    /* INTERNATIONAL STEPS */
+    .int-process { margin-top: 24px; }
+    .int-step { display: flex; align-items: flex-start; gap: 14px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .int-step:last-child { border-bottom: none; }
+    .int-step-num { width: 28px; height: 28px; background: var(--gold); color: var(--navy-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 700; flex-shrink: 0; }
+    .int-step-text { font-family: 'Source Sans 3', sans-serif; font-size: 0.88rem; color: rgba(255,255,255,0.68); line-height: 1.6; padding-top: 4px; }
+
+    /* ═══════════════════ JERARQUÍA ═══════════════════ */
+    .jerarquia-section { background: var(--off-white); }
+    .piramide { display: flex; flex-direction: column; gap: 6px; }
+    .nivel {
+      display: flex; align-items: center; gap: 16px; background: var(--white);
+      border: 1px solid var(--light-gray); border-radius: 6px; padding: 14px 18px;
+      transition: var(--transition); border-left: 3px solid var(--gold);
+    }
+    .nivel:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); transform: translateX(4px); }
+    .nivel-num { font-family: 'Montserrat', sans-serif; font-size: 0.82rem; font-weight: 700; color: var(--gold); min-width: 24px; }
+    .nivel-title { font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--navy); }
+    .nivel-desc { font-family: 'Source Sans 3', sans-serif; font-size: 0.8rem; color: var(--mid-gray); }
+
+    /* ═══════════════════ RECURSOS ═══════════════════ */
+    .recursos-section { background: var(--white); }
+    .recursos-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 36px; }
+    .tab-btn {
+      font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 10px 18px; border-radius: 4px; cursor: pointer; border: 1px solid var(--light-gray);
+      background: var(--white); color: var(--mid-gray); transition: var(--transition);
+    }
+    .tab-btn:hover, .tab-btn.active { background: var(--navy); color: var(--gold); border-color: var(--navy); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.3s ease; }
+    .recursos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .recurso-card {
+      display: block; text-decoration: none; border: 1px solid var(--light-gray); border-radius: 8px;
+      padding: 22px 20px; transition: var(--transition); background: var(--white);
+    }
+    .recurso-card:hover { border-color: var(--gold); box-shadow: 0 8px 24px rgba(0,0,0,0.07); transform: translateY(-2px); }
+    .recurso-name { font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-bottom: 5px; line-height: 1.3; }
+    .recurso-url { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; color: var(--gold); letter-spacing: 0.06em; margin-bottom: 10px; }
+    .recurso-desc { font-family: 'Source Sans 3', sans-serif; font-size: 0.8rem; color: var(--mid-gray); line-height: 1.65; }
+
+    /* ═══════════════════ CONTACTO ═══════════════════ */
+    .contacto-section { background: var(--off-white); }
+    .contacto-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 70px; align-items: start; }
+    .contacto-info h2 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--navy); margin-bottom: 16px; line-height: 1.25; }
+    .contacto-info > p { font-family: 'Source Sans 3', sans-serif; font-size: 0.97rem; color: var(--mid-gray); line-height: 1.8; margin-bottom: 36px; }
+    .contact-items { display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; }
+    .contact-item { display: flex; align-items: center; gap: 16px; }
+    .contact-icon { width: 44px; height: 44px; background: var(--navy); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .contact-text strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy); margin-bottom: 2px; }
+    .contact-text span { font-family: 'Source Sans 3', sans-serif; font-size: 0.92rem; color: var(--mid-gray); }
+    .coverage-cities { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .city-tag { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 500; padding: 5px 12px; background: var(--light-gray); border-radius: 20px; color: var(--mid-gray); }
+    .form-card { background: var(--white); border-radius: 12px; padding: 42px 40px; box-shadow: 0 8px 40px rgba(0,0,0,0.07); }
+    .form-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .form-sub { font-family: 'Source Sans 3', sans-serif; font-size: 0.85rem; color: var(--mid-gray); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy); margin-bottom: 7px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--light-gray); border-radius: 6px;
+      font-family: 'Source Sans 3', sans-serif; font-size: 0.93rem; color: var(--text);
+      background: var(--white); transition: var(--transition); outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--navy); box-shadow: 0 0 0 3px rgba(27,59,111,0.08); }
+    .form-group textarea { height: 110px; resize: vertical; }
+    .form-checkbox { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; }
+    .form-checkbox input { width: auto; margin-top: 3px; flex-shrink: 0; }
+    .form-checkbox label { font-family: 'Source Sans 3', sans-serif; font-size: 0.82rem; color: var(--mid-gray); line-height: 1.55; }
+    .form-checkbox label a { color: var(--navy); }
+    .btn-submit {
+      width: 100%; background: var(--navy); color: var(--white); border: none; border-radius: 4px;
+      padding: 15px; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: var(--transition);
+    }
+    .btn-submit:hover { background: var(--navy-light); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(27,59,111,0.35); }
+    .form-success { display: none; text-align: center; padding: 40px 20px; }
+    .form-success i { font-size: 3rem; color: #27ae60; margin-bottom: 16px; display: block; }
+    .form-success h4 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--navy); margin-bottom: 10px; }
+    .form-success p { font-family: 'Source Sans 3', sans-serif; color: var(--mid-gray); }
+
+    /* ═══════════════════ POLÍTICAS SECTION ═══════════════════ */
+    .policies-modal {
+      display: none; position: fixed; inset: 0; background: rgba(4,8,16,0.9); z-index: 3000;
+      align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto;
+    }
+    .policies-modal.open { display: flex; }
+    .policies-box {
+      background: var(--white); border-radius: 12px; max-width: 800px; width: 100%;
+      padding: 48px 48px 40px; position: relative; margin: auto;
+    }
+    .policies-box h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 8px; }
+    .policies-box .policy-date { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; color: var(--mid-gray); letter-spacing: 0.1em; margin-bottom: 28px; }
+    .policies-box h3 { font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 700; color: var(--navy); letter-spacing: 0.1em; text-transform: uppercase; margin: 22px 0 8px; }
+    .policies-box p, .policies-box li { font-family: 'Source Sans 3', sans-serif; font-size: 0.93rem; color: var(--carbon); line-height: 1.75; margin-bottom: 10px; }
+    .policies-box ul { padding-left: 20px; }
+    .pol-close { position: absolute; top: 16px; right: 16px; background: var(--light-gray); border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+    .pol-close:hover { background: var(--navy); color: var(--white); }
+
+    /* ═══════════════════ FOOTER ═══════════════════ */
+    footer { background: var(--navy-dark); padding: 70px 0 0; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+    .footer-brand p { font-family: 'Source Sans 3', sans-serif; font-size: 0.88rem; color: rgba(255,255,255,0.45); line-height: 1.8; margin-top: 14px; }
+    .footer-col h5 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 9px; }
+    .footer-col ul li a { font-family: 'Source Sans 3', sans-serif; font-size: 0.87rem; color: rgba(255,255,255,0.48); text-decoration: none; transition: var(--transition); }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding: 24px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { font-family: 'Source Sans 3', sans-serif; font-size: 0.82rem; color: rgba(255,255,255,0.3); }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { font-family: 'Source Sans 3', sans-serif; font-size: 0.8rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: var(--transition); cursor: pointer; }
+    .footer-legal a:hover { color: var(--gold); }
+
+    /* ═══════════════════ WHATSAPP FLOAT ═══════════════════ */
+    .whatsapp-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 900;
+      width: 56px; height: 56px; background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; color: white; text-decoration: none;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: var(--transition);
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.5); }
+
+    /* ═══════════════════ RESPONSIVE ═══════════════════ */
+    @media (max-width: 1100px) {
+      .hero-container { grid-template-columns: 1fr; padding-top: 120px; }
+      .hero-photo-card { max-width: 420px; margin: 0 auto; }
+      .director-grid { grid-template-columns: 1fr; max-width: 680px; margin: 0 auto; }
+      .director-photo { aspect-ratio: 4/3; max-height: 360px; }
+      .areas-grid { grid-template-columns: 1fr; }
+      .service-cards { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 900px) {
+      .nav-links, .nav-right .btn-cta { display: none; }
+      .hamburger { display: flex; }
+      .hero-container { padding-top: 100px; }
+      .recursos-grid { grid-template-columns: repeat(2, 1fr); }
+      .sol-grid { grid-template-columns: 1fr 1fr; }
+      .contacto-grid { grid-template-columns: 1fr; gap: 40px; }
+      .trust-bar-inner { gap: 20px; }
+      .trust-sep { display: none; }
+    }
+    @media (max-width: 680px) {
+      nav { padding: 0 20px; }
+      .container { padding: 0 20px; }
+      section { padding: 60px 0; }
+      .hero-container { padding: 0 20px; padding-top: 96px; gap: 40px; }
+      .hero h1 { font-size: 2.2rem; }
+      .hero-ctas { flex-direction: column; }
+      .sol-grid { grid-template-columns: 1fr; }
+      .recursos-grid { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-card { padding: 28px 22px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .modal-box { padding: 32px 24px; }
+      .modal-list { grid-template-columns: 1fr; }
+      .hd-steps { grid-template-columns: repeat(2, 1fr); }
+      .credentials-grid { grid-template-columns: 1fr; }
+      .jerarquia-section .container { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 400px) {
+      .recursos-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Scroll reveal */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="lang-es" id="body-root">
+
+<!-- ═══════════════════════════════════ HEADER ═══════════════════════════════════ -->
+<header id="main-header">
+  <nav>
+    <a href="#inicio" class="logo">
+      <!-- SVG Logo (simplified representation of Aury Diaz logo mark) -->
+      <svg class="logo-icon" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 2 L26 9 L20 6 L14 9 Z" fill="#C9A961"/>
+        <path d="M20 6 L24 12 L20 10 L16 12 Z" fill="#C9A961" opacity="0.7"/>
+        <path d="M14 12 L20 10 L26 12 L24 20 L20 28 L16 20 Z" fill="#C9A961" opacity="0.5"/>
+        <circle cx="20" cy="34" r="3" fill="#C9A961" opacity="0.6"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-main">Aury Díaz & Asociados</span>
+        <span class="logo-sub" data-lang="es">Estudio Jurídico de Alta Estrategia</span>
+        <span class="logo-sub" data-lang="en">Premium Legal Strategy Firm</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#inicio" data-lang="es">Inicio</a><a href="#inicio" data-lang="en">Home</a></li>
+      <li>
+        <a href="#areas" class="has-sub" data-lang="es">Áreas de Práctica</a>
+        <a href="#areas" class="has-sub" data-lang="en">Practice Areas</a>
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4 data-lang="es">⚖️ Litigios y Conflictos</h4>
+            <h4 data-lang="en">⚖️ Litigation & Disputes</h4>
+            <ul>
+              <li><a href="#" class="featured" onclick="openModal('penal');return false;" data-lang="es">★ Defensa Penal y Sistema Acusatorio</a><a href="#" class="featured" onclick="openModal('penal');return false;" data-lang="en">★ Criminal Defense & Accusatory System</a></li>
+              <li><a href="#" onclick="openModal('disciplinario');return false;" data-lang="es">Derecho Público y Disciplinario</a><a href="#" onclick="openModal('disciplinario');return false;" data-lang="en">Public & Disciplinary Law</a></li>
+              <li><a href="#" onclick="openModal('civil');return false;" data-lang="es">Litigio Civil y Responsabilidad</a><a href="#" onclick="openModal('civil');return false;" data-lang="en">Civil Litigation & Liability</a></li>
+              <li><a href="#" onclick="openModal('jep');return false;" data-lang="es">Justicia Transicional y DDHH</a><a href="#" onclick="openModal('jep');return false;" data-lang="en">Transitional Justice & Human Rights</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <h4 data-lang="es">🏢 Corporativo y Negocios</h4>
+            <h4 data-lang="en">🏢 Corporate & Business</h4>
+            <ul>
+              <li><a href="#" class="featured" onclick="openModal('societario');return false;" data-lang="es">★ Derecho Comercial y Societario</a><a href="#" class="featured" onclick="openModal('societario');return false;" data-lang="en">★ Commercial & Corporate Law</a></li>
+              <li><a href="#" onclick="openModal('tributario');return false;" data-lang="es">Derecho Tributario y Aduanero</a><a href="#" onclick="openModal('tributario');return false;" data-lang="en">Tax & Customs Law</a></li>
+              <li><a href="#" onclick="openModal('pi');return false;" data-lang="es">Propiedad Intelectual y LegalTech</a><a href="#" onclick="openModal('pi');return false;" data-lang="en">Intellectual Property & LegalTech</a></li>
+              <li><a href="#" onclick="openModal('ph');return false;" data-lang="es">Propiedad Horizontal e Inmobiliario</a><a href="#" onclick="openModal('ph');return false;" data-lang="en">Real Estate & Property Law</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <h4 data-lang="es">👨‍👩‍👧 Personas y Familias</h4>
+            <h4 data-lang="en">👨‍👩‍👧 Persons & Families</h4>
+            <ul>
+              <li><a href="#" class="featured" onclick="openModal('laboral');return false;" data-lang="es">★ Derecho Laboral y Seguridad Social</a><a href="#" class="featured" onclick="openModal('laboral');return false;" data-lang="en">★ Labor & Social Security Law</a></li>
+              <li><a href="#" onclick="openModal('familia');return false;" data-lang="es">Derecho de Familia y Sucesiones</a><a href="#" onclick="openModal('familia');return false;" data-lang="en">Family Law & Inheritance</a></li>
+              <li><a href="#" onclick="openModal('insolvencia');return false;" data-lang="es">Insolvencia de Persona Natural</a><a href="#" onclick="openModal('insolvencia');return false;" data-lang="en">Personal Insolvency</a></li>
+              <li><a href="#servicios-estrategicos" data-lang="es">🌎 Representación Internacional</a><a href="#servicios-estrategicos" data-lang="en">🌎 International Representation</a></li>
+              <li><a href="#servicios-estrategicos" data-lang="es">🛡️ Habeas Data Financiero</a><a href="#servicios-estrategicos" data-lang="en">🛡️ Financial Data Defense</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#director" class="has-sub" data-lang="es">La Firma</a>
+        <a href="#director" class="has-sub" data-lang="en">The Firm</a>
+        <div class="dropdown">
+          <a href="#director" data-lang="es">El Director</a><a href="#director" data-lang="en">The Director</a>
+          <a href="#director" data-lang="es">Red Of Counsel</a><a href="#director" data-lang="en">Of Counsel Network</a>
+          <a href="#soluciones" data-lang="es">Soluciones Integrales</a><a href="#soluciones" data-lang="en">Integrated Solutions</a>
+        </div>
+      </li>
+      <li>
+        <a href="#servicios-estrategicos" class="has-sub" data-lang="es">Servicios</a>
+        <a href="#servicios-estrategicos" class="has-sub" data-lang="en">Services</a>
+        <div class="dropdown">
+          <a href="#servicios-estrategicos" data-lang="es">🌎 Representación Internacional</a><a href="#servicios-estrategicos" data-lang="en">🌎 International Representation</a>
+          <a href="#servicios-estrategicos" data-lang="es">🛡️ Habeas Data Financiero</a><a href="#servicios-estrategicos" data-lang="en">🛡️ Financial Data Defense</a>
+          <a href="#soluciones" data-lang="es">Conciliación e Insolvencia</a><a href="#soluciones" data-lang="en">Conciliation & Insolvency</a>
+          <a href="#soluciones" data-lang="es">Rutas Legales</a><a href="#soluciones" data-lang="en">Legal Routes</a>
+        </div>
+      </li>
+      <li><a href="#recursos" data-lang="es">Recursos Jurídicos</a><a href="#recursos" data-lang="en">Legal Resources</a></li>
+      <li><a href="#contacto" data-lang="es">Contacto</a><a href="#contacto" data-lang="en">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-flags">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">
+          <img src="https://flagcdn.com/co.svg" alt="Colombia"> ES
+        </button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">
+          <img src="https://flagcdn.com/us.svg" alt="USA"> EN
+        </button>
+      </div>
+      <a href="#contacto" class="btn-cta" data-lang="es">Evaluación de su Caso</a>
+      <a href="#contacto" class="btn-cta" data-lang="en">Case Evaluation</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-section" data-lang="es">Navegación</div>
+  <div class="mobile-section" data-lang="en">Navigation</div>
+  <a href="#inicio" onclick="closeMobile()" data-lang="es">Inicio</a>
+  <a href="#inicio" onclick="closeMobile()" data-lang="en">Home</a>
+  <a href="#areas" onclick="closeMobile()" data-lang="es">Áreas de Práctica</a>
+  <a href="#areas" onclick="closeMobile()" data-lang="en">Practice Areas</a>
+  <a href="#director" onclick="closeMobile()" data-lang="es">La Firma</a>
+  <a href="#director" onclick="closeMobile()" data-lang="en">The Firm</a>
+  <a href="#servicios-estrategicos" onclick="closeMobile()" data-lang="es">🌎 Representación Internacional</a>
+  <a href="#servicios-estrategicos" onclick="closeMobile()" data-lang="en">🌎 International Representation</a>
+  <a href="#servicios-estrategicos" onclick="closeMobile()" data-lang="es">🛡️ Habeas Data Financiero</a>
+  <a href="#servicios-estrategicos" onclick="closeMobile()" data-lang="en">🛡️ Financial Data Defense</a>
+  <a href="#recursos" onclick="closeMobile()" data-lang="es">Recursos Jurídicos</a>
+  <a href="#recursos" onclick="closeMobile()" data-lang="en">Legal Resources</a>
+  <a href="#contacto" onclick="closeMobile()" data-lang="es">Contacto</a>
+  <a href="#contacto" onclick="closeMobile()" data-lang="en">Contact</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" onclick="setLang('es');closeMobile()"><img src="https://flagcdn.com/co.svg" alt="CO"> ES</button>
+    <button class="lang-btn" onclick="setLang('en');closeMobile()"><img src="https://flagcdn.com/us.svg" alt="US"> EN</button>
+  </div>
+  <a href="#contacto" onclick="closeMobile()" class="mobile-cta" data-lang="es">Evaluación de su Caso →</a>
+  <a href="#contacto" onclick="closeMobile()" class="mobile-cta" data-lang="en">Case Evaluation →</a>
+</div>
+
+<!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-grid"></div>
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span data-lang="es">Estudio Jurídico · Cali, Colombia · Cobertura Nacional</span>
+        <span data-lang="en">Law Firm · Cali, Colombia · National & International Coverage</span>
+      </div>
+      <h1 data-lang="es">
+        Defensa Jurídica de <em>Élite</em><br>en el Corazón de Colombia
+      </h1>
+      <h1 data-lang="en">
+        Elite Legal Defense<br>from the <em>Heart of Colombia</em>
+      </h1>
+      <p class="hero-sub" data-lang="es">
+        Especialistas en derecho penal y estrategia jurídica integral. Representamos sus intereses en Colombia sin importar dónde se encuentre — con la precisión de un penalista de alto nivel y la solidez de una red multidisciplinaria de aliados.
+      </p>
+      <p class="hero-sub" data-lang="en">
+        Specialists in criminal law and comprehensive legal strategy. We represent your interests in Colombia regardless of your location — with the precision of a top-level criminal lawyer and the strength of a multidisciplinary network.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn-primary" data-lang="es">Evaluar mi Caso</a>
+        <a href="#contacto" class="btn-primary" data-lang="en">Evaluate my Case</a>
+        <a href="#areas" class="btn-secondary" data-lang="es">Ver Áreas de Práctica</a>
+        <a href="#areas" class="btn-secondary" data-lang="en">View Practice Areas</a>
+      </div>
+    </div>
+    <div class="hero-photo-card">
+      <div class="hero-photo-inner">
+        <!-- Photo 1 (seated, casual-professional) is preferred per client -->
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 530'%3E%3Crect width='400' height='530' fill='%231a2d4a'/%3E%3Ctext x='200' y='240' text-anchor='middle' fill='rgba(201,169,97,0.3)' font-size='80'%3E👤%3C/text%3E%3Ctext x='200' y='310' text-anchor='middle' fill='rgba(201,169,97,0.4)' font-family='Georgia' font-size='13'%3EInsertar foto profesional%3C/text%3E%3Ctext x='200' y='332' text-anchor='middle' fill='rgba(201,169,97,0.4)' font-family='Georgia' font-size='13'%3EAury Fernán Díaz%3C/text%3E%3C/svg%3E" alt="Dr. Aury Fernán Díaz Alarcón" id="hero-img" onerror="this.style.display='none'">
+      </div>
+      <div class="hero-photo-tag">
+        <div class="hero-photo-name">Aury Fernán Díaz Alarcón</div>
+        <div class="hero-photo-role" data-lang="es">Magíster en Derecho · Penalista Litigante</div>
+        <div class="hero-photo-role" data-lang="en">Master of Law · Criminal Litigator</div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label" data-lang="es">Años Litigando</span>
+          <span class="stat-label" data-lang="en">Years Litigating</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label" data-lang="es">Macro-Áreas</span>
+          <span class="stat-label" data-lang="en">Practice Areas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">🇨🇴🇺🇸🇬🇧</span>
+          <span class="stat-label" data-lang="es">Cobertura</span>
+          <span class="stat-label" data-lang="en">Coverage</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><i class="fas fa-shield-alt"></i><span data-lang="es">Secreto Profesional Garantizado</span><span data-lang="en">Professional Secrecy Guaranteed</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="fas fa-graduation-cap"></i><span data-lang="es">Magíster & Especialista en Derecho Penal</span><span data-lang="en">Master & Specialist in Criminal Law</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="fas fa-globe-americas"></i><span data-lang="es">Representación sin desplazamiento</span><span data-lang="en">Representation without travel</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="fas fa-users"></i><span data-lang="es">Red Of Counsel Multidisciplinaria</span><span data-lang="en">Multidisciplinary Of Counsel Network</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="fas fa-map-marker-alt"></i><span data-lang="es">Cali · Bogotá · Medellín · Nacional</span><span data-lang="en">Cali · Bogotá · Medellín · National</span></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ MACRO-ÁREAS ═══════════════════════════════════ -->
+<section class="areas-section" id="areas">
+  <div class="container">
+    <span class="section-badge" data-lang="es">Áreas de Práctica</span>
+    <span class="section-badge" data-lang="en">Practice Areas</span>
+    <h2 class="section-title" data-lang="es">Tres Macro-Áreas,<br>Un Solo Estándar de Excelencia</h2>
+    <h2 class="section-title" data-lang="en">Three Practice Areas,<br>One Standard of Excellence</h2>
+    <p class="section-sub" data-lang="es">La complejidad legal exige especialización. Nuestras tres macro-áreas cubren cada frente jurídico bajo la dirección estratégica de un penalista de alto nivel y su red de aliados expertos. Haga clic en cada área para conocer los detalles.</p>
+    <p class="section-sub" data-lang="en">Legal complexity demands specialization. Our three practice areas cover every legal front under the strategic direction of a top criminal lawyer and his expert network. Click each area to learn more.</p>
+    <div class="areas-grid">
+      <!-- ÁREA 1 -->
+      <div class="area-card reveal" onclick="openModal('macro1')">
+        <div class="area-num" data-lang="es">Macro-Área 01 — El Eje Central</div>
+        <div class="area-num" data-lang="en">Practice Area 01 — Core Expertise</div>
+        <div class="area-icon">⚖️</div>
+        <h3 class="area-title" data-lang="es">Litigios y Resolución de Conflictos</h3>
+        <h3 class="area-title" data-lang="en">Litigation & Conflict Resolution</h3>
+        <p class="area-desc" data-lang="es">Defensa estratégica en todas las instancias judiciales. Especialización penalista de alto nivel en el sistema acusatorio colombiano.</p>
+        <p class="area-desc" data-lang="en">Strategic defense at all judicial levels. High-level criminal specialization in Colombia's accusatory system.</p>
+        <ul class="area-items">
+          <li class="featured" data-lang="es">⚖️ Defensa Penal y Sistema Acusatorio</li>
+          <li class="featured" data-lang="en">⚖️ Criminal Defense & Accusatory System</li>
+          <li class="featured" data-lang="es">🏛️ Derecho Público y Disciplinario</li>
+          <li class="featured" data-lang="en">🏛️ Public & Disciplinary Law</li>
+          <li data-lang="es">📋 Litigio Civil y Responsabilidad</li>
+          <li data-lang="en">📋 Civil Litigation & Liability</li>
+          <li data-lang="es">🕊️ Justicia Transicional y DDHH</li>
+          <li data-lang="en">🕊️ Transitional Justice & Human Rights</li>
+          <li data-lang="es">🌎 Representación en el exterior</li>
+          <li data-lang="en">🌎 International Representation</li>
+        </ul>
+        <span class="area-link" data-lang="es">Ver detalles de esta área →</span>
+        <span class="area-link" data-lang="en">View area details →</span>
+      </div>
+
+      <!-- ÁREA 2 -->
+      <div class="area-card reveal" onclick="openModal('macro2')">
+        <div class="area-num" data-lang="es">Macro-Área 02 — Corporativo</div>
+        <div class="area-num" data-lang="en">Practice Area 02 — Corporate</div>
+        <div class="area-icon">🏢</div>
+        <h3 class="area-title" data-lang="es">Derecho Corporativo y Negocios</h3>
+        <h3 class="area-title" data-lang="en">Corporate Law & Business</h3>
+        <p class="area-desc" data-lang="es">Protección jurídica integral para empresas, inversionistas y emprendedores. Desde la constitución societaria hasta la defensa penal económica.</p>
+        <p class="area-desc" data-lang="en">Comprehensive legal protection for companies, investors and entrepreneurs. From corporate formation to economic criminal defense.</p>
+        <ul class="area-items">
+          <li class="featured" data-lang="es">🏢 Derecho Comercial y Societario</li>
+          <li class="featured" data-lang="en">🏢 Commercial & Corporate Law</li>
+          <li data-lang="es">💰 Derecho Tributario y Aduanero</li>
+          <li data-lang="en">💰 Tax & Customs Law</li>
+          <li data-lang="es">💡 Propiedad Intelectual y LegalTech</li>
+          <li data-lang="en">💡 Intellectual Property & LegalTech</li>
+          <li data-lang="es">🏠 Propiedad Horizontal e Inmobiliario</li>
+          <li data-lang="en">🏠 Real Estate & Property Law</li>
+          <li class="featured" data-lang="es">🛡️ Habeas Data — Defensa Crediticia</li>
+          <li class="featured" data-lang="en">🛡️ Habeas Data — Credit Defense</li>
+        </ul>
+        <span class="area-link" data-lang="es">Ver detalles de esta área →</span>
+        <span class="area-link" data-lang="en">View area details →</span>
+      </div>
+
+      <!-- ÁREA 3 -->
+      <div class="area-card reveal" onclick="openModal('macro3')">
+        <div class="area-num" data-lang="es">Macro-Área 03 — Personas</div>
+        <div class="area-num" data-lang="en">Practice Area 03 — Persons</div>
+        <div class="area-icon">👨‍👩‍👧</div>
+        <h3 class="area-title" data-lang="es">Derecho de las Personas y Familias</h3>
+        <h3 class="area-title" data-lang="en">Persons & Family Law</h3>
+        <p class="area-desc" data-lang="es">Acompañamiento jurídico integral en las decisiones más trascendentes de su vida personal, laboral y familiar.</p>
+        <p class="area-desc" data-lang="en">Comprehensive legal counsel for the most transcendent decisions in your personal, professional and family life.</p>
+        <ul class="area-items">
+          <li class="featured" data-lang="es">👔 Derecho Laboral y Seguridad Social</li>
+          <li class="featured" data-lang="en">👔 Labor & Social Security Law</li>
+          <li data-lang="es">👨‍👩‍👧 Derecho de Familia y Sucesiones</li>
+          <li data-lang="en">👨‍👩‍👧 Family Law & Inheritance</li>
+          <li data-lang="es">🔓 Insolvencia de Persona Natural</li>
+          <li data-lang="en">🔓 Personal Insolvency</li>
+          <li data-lang="es">🌎 Colombianos en el exterior</li>
+          <li data-lang="en">🌎 Colombians abroad</li>
+        </ul>
+        <span class="area-link" data-lang="es">Ver detalles de esta área →</span>
+        <span class="area-link" data-lang="en">View area details →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ DIRECTOR ═══════════════════════════════════ -->
+<section class="director-section" id="director">
+  <div class="container">
+    <div class="director-grid">
+      <div class="director-photo">
+        <!-- Preferring the seated/relaxed Forbes-style photo (IMG_0911) -->
+        <div class="director-photo-placeholder">
+          <i class="fas fa-user-tie"></i>
+          <p>Fotografía Editorial<br>Dr. Aury Díaz<br><br>Insertar imagen<br>profesional estilo Forbes</p>
+        </div>
+        <div class="director-photo-tag"><span data-lang="es">Socio Fundador</span><span data-lang="en">Founding Partner</span></div>
+      </div>
+      <div class="director-content">
+        <div class="gold-line"></div>
+        <span class="section-badge" data-lang="es">El Director y La Firma</span>
+        <span class="section-badge" data-lang="en">The Director & The Firm</span>
+        <h2 class="director-name">Aury Fernán Díaz Alarcón</h2>
+        <p class="director-role" data-lang="es">Magíster en Derecho · Especialista en Derecho Penal y Procesal Penal · Penalista Litigante</p>
+        <p class="director-role" data-lang="en">Master of Law · Specialist in Criminal & Procedural Law · Criminal Litigator</p>
+        <p class="director-bio" data-lang="es">
+          Abogado litigante independiente con más de 10 años de experiencia forjada exclusivamente en los estrados judiciales colombianos. Nunca ha estado vinculado a ninguna entidad pública o privada — toda su carrera la ha desarrollado como litigante independiente, lo que garantiza estrategias jurídicas sin conflictos de interés y con un único norte: la protección de los derechos y el patrimonio de sus clientes.<br><br>
+          Líder de una red multidisciplinaria de abogados aliados (Of Counsel) especializados en cada rama del derecho. Usted no contrata un abogado — contrata un equipo estratégico con el mejor especialista para su caso.
+        </p>
+        <p class="director-bio" data-lang="en">
+          Independent litigating attorney with over 10 years of experience built exclusively in Colombian courts. Never affiliated with any public or private entity — his entire career as an independent litigator guarantees conflict-free legal strategies with one single objective: protecting your rights and assets.<br><br>
+          Leader of a multidisciplinary network of allied attorneys (Of Counsel) specialized in each area of law. You don't hire a lawyer — you hire a strategic team with the best specialist for your case.
+        </p>
+        <div class="credentials-grid">
+          <div class="credential-item reveal">
+            <div class="credential-year">2023</div>
+            <div class="credential-title" data-lang="es">Magíster en Derecho</div>
+            <div class="credential-title" data-lang="en">Master of Law (LL.M.)</div>
+            <div class="credential-uni" data-lang="es">Universidad Santiago de Cali</div>
+            <div class="credential-uni" data-lang="en">Universidad Santiago de Cali</div>
+          </div>
+          <div class="credential-item reveal">
+            <div class="credential-year">2025</div>
+            <div class="credential-title" data-lang="es">Especialista en Derecho Penal y Procesal Penal</div>
+            <div class="credential-title" data-lang="en">Specialist in Criminal & Procedural Law</div>
+            <div class="credential-uni" data-lang="es">Universidad Santiago de Cali</div>
+            <div class="credential-uni" data-lang="en">Universidad Santiago de Cali</div>
+          </div>
+          <div class="credential-item reveal">
+            <div class="credential-year">2010+</div>
+            <div class="credential-title" data-lang="es">Abogado Litigante Independiente</div>
+            <div class="credential-title" data-lang="en">Independent Litigating Attorney</div>
+            <div class="credential-uni" data-lang="es">Cali, Colombia — Cobertura Nacional</div>
+            <div class="credential-uni" data-lang="en">Cali, Colombia — National Coverage</div>
+          </div>
+          <div class="credential-item reveal">
+            <div class="credential-year">TRILINGÜE</div>
+            <div class="credential-title" data-lang="es">Atención en Español e Inglés</div>
+            <div class="credential-title" data-lang="en">Service in Spanish & English</div>
+            <div class="credential-uni" data-lang="es">Para clientes en USA, UK y Colombia</div>
+            <div class="credential-uni" data-lang="en">For clients in USA, UK & Colombia</div>
+          </div>
+        </div>
+        <div class="of-counsel">
+          <h4 data-lang="es">🤝 Red Of Counsel — Aliados Estratégicos</h4>
+          <h4 data-lang="en">🤝 Of Counsel Network — Strategic Allies</h4>
+          <p data-lang="es">Aury Díaz & Asociados opera como una boutique jurídica inteligente: el Dr. Díaz es el punto de entrada y filtro estratégico. Para cada caso, activa al abogado aliado especialista más idóneo — laboral, ambiental, familia, tributario — garantizando experiencia punta en cada frente sin costo de estructura permanente para el cliente.</p>
+          <p data-lang="en">Aury Díaz & Asociados operates as an intelligent legal boutique: Dr. Díaz is the entry point and strategic filter. For each case, he activates the most suitable specialist allied attorney — labor, environmental, family, tax — delivering cutting-edge expertise on every front without permanent structure costs for the client.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ SOLUCIONES ═══════════════════════════════════ -->
+<section class="soluciones-section" id="soluciones">
+  <div class="container">
+    <span class="section-badge" data-lang="es">Soluciones Integrales</span>
+    <span class="section-badge" data-lang="en">Integrated Solutions</span>
+    <h2 class="section-title" data-lang="es">Más que Asesoría — Rutas Claras hacia sus Derechos</h2>
+    <h2 class="section-title" data-lang="en">More than Advice — Clear Routes to your Rights</h2>
+    <p class="section-sub" data-lang="es">Metodologías propias diseñadas para resolver su situación con claridad, transparencia y sin sorpresas en el camino.</p>
+    <p class="section-sub" data-lang="en">Proprietary methodologies designed to resolve your situation with clarity, transparency and no surprises along the way.</p>
+    <div class="sol-grid">
+      <div class="sol-card reveal">
+        <span class="sol-icon">🤝</span>
+        <h3 class="sol-title" data-lang="es">Conciliación e Insolvencia</h3>
+        <h3 class="sol-title" data-lang="en">Conciliation & Insolvency</h3>
+        <p class="sol-desc" data-lang="es">Evite el desgaste de un litigio. Trabajamos con centros de conciliación avalados por el Ministerio de Justicia. Para sobreendeudamiento, estructuramos procesos de Insolvencia de Persona Natural No Comerciante (Arts. 531-576 CGP).</p>
+        <p class="sol-desc" data-lang="en">Avoid the wear of litigation. We work with conciliation centers endorsed by the Ministry of Justice. For over-indebtedness, we structure Personal Insolvency processes.</p>
+      </div>
+      <div class="sol-card reveal">
+        <span class="sol-icon">🧭</span>
+        <h3 class="sol-title" data-lang="es">Rutas Legales Paso a Paso</h3>
+        <h3 class="sol-title" data-lang="en">Step-by-Step Legal Routes</h3>
+        <p class="sol-desc" data-lang="es">Metodología propia. Antes de iniciar cualquier proceso, trazamos con usted una ruta jurídica clara: escenarios posibles, tiempos estimados, costos proyectados. Sin sorpresas.</p>
+        <p class="sol-desc" data-lang="en">Proprietary methodology. Before starting any process, we map a clear legal route together: possible scenarios, estimated timelines, projected costs. No surprises.</p>
+      </div>
+      <div class="sol-card reveal">
+        <span class="sol-icon">🤖</span>
+        <h3 class="sol-title" data-lang="es">Orientación IA 24/7</h3>
+        <h3 class="sol-title" data-lang="en">AI Guidance 24/7</h3>
+        <p class="sol-desc" data-lang="es">Canal de orientación asistida por inteligencia artificial para consultas iniciales fuera de horario. Respuestas basadas en normatividad colombiana actualizada, supervisadas por el equipo jurídico.</p>
+        <p class="sol-desc" data-lang="en">AI-assisted guidance channel for initial consultations outside business hours. Answers based on updated Colombian regulations, supervised by the legal team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ SERVICIOS ESTRATÉGICOS ═══════════════════════════════════ -->
+<section class="servicios-estrategicos" id="servicios-estrategicos">
+  <div class="container">
+    <span class="section-badge" data-lang="es">Servicios de Alto Valor</span>
+    <span class="section-badge" data-lang="en">High-Value Services</span>
+    <h2 class="section-title light" data-lang="es">Estrategia Jurídica para Clientes Globales y Defensa Financiera</h2>
+    <h2 class="section-title light" data-lang="en">Legal Strategy for Global Clients & Financial Defense</h2>
+    <p class="section-sub light" data-lang="es">Dos líneas de servicio diseñadas para necesidades específicas de alto impacto: representación sin desplazamiento para clientes en el exterior y defensa técnica de su historial crediticio.</p>
+    <p class="section-sub light" data-lang="en">Two service lines designed for specific high-impact needs: no-travel representation for clients abroad and technical defense of your credit history.</p>
+    <div class="service-cards">
+      <!-- INTERNACIONAL -->
+      <div class="service-feature reveal" id="internacional">
+        <h3 data-lang="es">🌎 Representación Legal en Colombia — Sin Necesidad de Viajar</h3>
+        <h3 data-lang="en">🌎 Legal Representation in Colombia — No Travel Required</h3>
+        <p data-lang="es">Si usted se encuentra en Estados Unidos, Reino Unido u otro país, pero necesita actuar legalmente en Colombia, asumimos su representación integral mediante poder debidamente apostillado o autenticado en consulado. Sin que tenga que desplazarse.</p>
+        <p data-lang="en">If you are in the United States, United Kingdom or another country but need to act legally in Colombia, we assume your full representation through a duly apostilled or consulate-authenticated power of attorney. No travel required.</p>
+        <ul>
+          <li data-lang="es">🏠 Inversiones e inmuebles (compra, fraude, administración)</li>
+          <li data-lang="en">🏠 Investments & real estate (purchase, fraud, management)</li>
+          <li data-lang="es">⚖️ Familia y patrimonio (sucesiones, divorcios, liquidaciones)</li>
+          <li data-lang="en">⚖️ Family & estate (successions, divorces, liquidations)</li>
+          <li data-lang="es">💼 Negocios y sociedades (constitución, representación de socios)</li>
+          <li data-lang="en">💼 Business & companies (formation, shareholder representation)</li>
+          <li data-lang="es">💰 Obligaciones con la DIAN (declaraciones, defensa administrativa)</li>
+          <li data-lang="en">💰 DIAN obligations (tax returns, administrative defense)</li>
+          <li data-lang="es">🏛️ Procesos penales y disciplinarios que involucren a no residentes</li>
+          <li data-lang="en">🏛️ Criminal and disciplinary processes involving non-residents</li>
+        </ul>
+        <div class="int-process">
+          <div class="int-step">
+            <div class="int-step-num">1</div>
+            <div class="int-step-text" data-lang="es"><strong>Consulta Virtual:</strong> Video-llamada inicial gratuita y confidencial para evaluar su caso desde cualquier país.</div>
+            <div class="int-step-text" data-lang="en"><strong>Virtual Consultation:</strong> Free and confidential initial video call to evaluate your case from any country.</div>
+          </div>
+          <div class="int-step">
+            <div class="int-step-num">2</div>
+            <div class="int-step-text" data-lang="es"><strong>Poder Notarial:</strong> Le guiamos paso a paso para otorgar poder ante notario local y apostillar el documento.</div>
+            <div class="int-step-text" data-lang="en"><strong>Power of Attorney:</strong> We guide you step by step to grant power before a local notary and apostille the document.</div>
+          </div>
+          <div class="int-step">
+            <div class="int-step-num">3</div>
+            <div class="int-step-text" data-lang="es"><strong>Representación Total:</strong> Actuamos en su nombre ante todas las autoridades colombianas con reporte periódico.</div>
+            <div class="int-step-text" data-lang="en"><strong>Full Representation:</strong> We act on your behalf before all Colombian authorities with periodic reporting.</div>
+          </div>
+          <div class="int-step">
+            <div class="int-step-num">4</div>
+            <div class="int-step-text" data-lang="es"><strong>Seguimiento:</strong> Informes de avance en español e inglés. Comunicación por WhatsApp, email y videollamada.</div>
+            <div class="int-step-text" data-lang="en"><strong>Follow-up:</strong> Progress reports in Spanish and English. Communication via WhatsApp, email and video call.</div>
+          </div>
+        </div>
+        <a href="#contacto" class="service-link" data-lang="es">Solicitar asistencia internacional →</a>
+        <a href="#contacto" class="service-link" data-lang="en">Request international assistance →</a>
+      </div>
+
+      <!-- HABEAS DATA -->
+      <div class="service-feature reveal" id="historial-crediticio">
+        <h3 data-lang="es">🛡️ Revisión y Defensa Legal de su Historial Crediticio</h3>
+        <h3 data-lang="en">🛡️ Review & Legal Defense of your Credit History</h3>
+        <p data-lang="es">Un reporte negativo en Datacrédito, TransUnion o cualquier central de riesgo no es absoluto ni permanente. Determinamos si su información cumple con las exigencias del Habeas Data Financiero (Ley 1581 de 2012 y Ley 1266 de 2008). No prometemos borrar — ejecutamos una defensa técnica para verificar la validez y permanencia del reporte.</p>
+        <p data-lang="en">A negative report in Datacrédito, TransUnion or any credit bureau is not absolute or permanent. We determine whether your information complies with Financial Habeas Data requirements (Law 1581 of 2012 and Law 1266 of 2008). We don't promise deletion — we execute a technical defense to verify the validity and permanence of the report.</p>
+        <ul>
+          <li data-lang="es">📋 Análisis del origen y legitimidad de la obligación reportada</li>
+          <li data-lang="en">📋 Analysis of the origin and legitimacy of the reported obligation</li>
+          <li data-lang="es">⏱️ Verificación de los tiempos de permanencia legales (máx. 4 años o el doble del plazo)</li>
+          <li data-lang="en">⏱️ Verification of legal permanence periods (max. 4 years or double the term)</li>
+          <li data-lang="es">🔍 Evaluación de inconsistencias legales y técnicas en el reporte</li>
+          <li data-lang="en">🔍 Evaluation of legal and technical inconsistencies in the report</li>
+          <li data-lang="es">⚖️ Determinación de viabilidad para actuar ante la SIC o judicialmente</li>
+          <li data-lang="en">⚖️ Determination of feasibility to act before the SIC or judicially</li>
+          <li data-lang="es">📝 Redacción de derechos de petición y recursos ante la entidad reportante</li>
+          <li data-lang="en">📝 Drafting of petition rights and appeals to the reporting entity</li>
+        </ul>
+        <div class="hd-steps">
+          <div class="hd-step">
+            <span class="hd-step-num">1</span>
+            <span class="hd-step-text" data-lang="es">Diagnóstico</span>
+            <span class="hd-step-text" data-lang="en">Diagnosis</span>
+          </div>
+          <div class="hd-step">
+            <span class="hd-step-num">2</span>
+            <span class="hd-step-text" data-lang="es">Análisis Legal</span>
+            <span class="hd-step-text" data-lang="en">Legal Analysis</span>
+          </div>
+          <div class="hd-step">
+            <span class="hd-step-num">3</span>
+            <span class="hd-step-text" data-lang="es">Estrategia</span>
+            <span class="hd-step-text" data-lang="en">Strategy</span>
+          </div>
+          <div class="hd-step">
+            <span class="hd-step-num">4</span>
+            <span class="hd-step-text" data-lang="es">Acción Legal</span>
+            <span class="hd-step-text" data-lang="en">Legal Action</span>
+          </div>
+        </div>
+        <a href="#contacto" class="service-link" style="margin-top:20px;display:inline-flex;" data-lang="es">Evaluar mi situación crediticia →</a>
+        <a href="#contacto" class="service-link" style="margin-top:20px;display:inline-flex;" data-lang="en">Evaluate my credit situation →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ JERARQUÍA ═══════════════════════════════════ -->
+<section class="jerarquia-section" id="jerarquia">
+  <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center;">
+    <div>
+      <div class="gold-line"></div>
+      <span class="section-badge" data-lang="es">Marco Normativo</span>
+      <span class="section-badge" data-lang="en">Regulatory Framework</span>
+      <h2 class="section-title" data-lang="es">Jerarquía Normativa Colombiana</h2>
+      <h2 class="section-title" data-lang="en">Colombian Regulatory Hierarchy</h2>
+      <p class="section-sub" data-lang="es">Todo análisis jurídico que realizamos respeta estrictamente la Pirámide de Kelsen aplicada al ordenamiento colombiano. Trabajamos dentro del marco legal correcto — siempre.</p>
+      <p class="section-sub" data-lang="en">Every legal analysis we perform strictly respects the Kelsen Pyramid applied to the Colombian legal system. We always work within the correct legal framework.</p>
+      <a href="#contacto" class="btn-primary" style="display:inline-block; text-decoration:none;" data-lang="es">Consultar mi Caso</a>
+      <a href="#contacto" class="btn-primary" style="display:inline-block; text-decoration:none;" data-lang="en">Consult my Case</a>
+    </div>
+    <div class="piramide">
+      <div class="nivel reveal"><div class="nivel-num">1</div><div class="nivel-text"><div class="nivel-title" data-lang="es">Constitución Política 1991</div><div class="nivel-title" data-lang="en">Constitution 1991</div><div class="nivel-desc" data-lang="es">Norma de normas — Base de todo análisis jurídico</div><div class="nivel-desc" data-lang="en">Law of laws — Base of all legal analysis</div></div></div>
+      <div class="nivel reveal"><div class="nivel-num">2</div><div class="nivel-text"><div class="nivel-title" data-lang="es">Bloque de Constitucionalidad</div><div class="nivel-title" data-lang="en">Constitutionality Block</div><div class="nivel-desc" data-lang="es">Tratados de DDHH ratificados — Art. 93 CP</div><div class="nivel-desc" data-lang="en">Ratified human rights treaties — Art. 93 CP</div></div></div>
+      <div class="nivel reveal"><div class="nivel-num">3</div><div class="nivel-text"><div class="nivel-title" data-lang="es">Leyes y Códigos</div><div class="nivel-title" data-lang="en">Laws & Codes</div><div class="nivel-desc" data-lang="es">Orgánicas, estatutarias y ordinarias</div><div class="nivel-desc" data-lang="en">Organic, statutory and ordinary laws</div></div></div>
+      <div class="nivel reveal"><div class="nivel-num">4</div><div class="nivel-text"><div class="nivel-title" data-lang="es">Decretos Reglamentarios</div><div class="nivel-title" data-lang="en">Regulatory Decrees</div><div class="nivel-desc" data-lang="es">Del Presidente de la República y ministerios</div><div class="nivel-desc" data-lang="en">From the President and ministries</div></div></div>
+      <div class="nivel reveal"><div class="nivel-num">5</div><div class="nivel-text"><div class="nivel-title" data-lang="es">Jurisprudencia Vinculante</div><div class="nivel-title" data-lang="en">Binding Jurisprudence</div><div class="nivel-desc" data-lang="es">Corte Constitucional → CSJ → Consejo de Estado</div><div class="nivel-desc" data-lang="en">Constitutional Court → CSJ → State Council</div></div></div>
+      <div class="nivel reveal"><div class="nivel-num">6</div><div class="nivel-text"><div class="nivel-title" data-lang="es">Doctrina Oficial Estatal</div><div class="nivel-title" data-lang="en">Official State Doctrine</div><div class="nivel-desc" data-lang="es">Conceptos de entidades .gov.co</div><div class="nivel-desc" data-lang="en">Concepts from .gov.co entities</div></div></div>
+      <div class="nivel reveal"><div class="nivel-num">7</div><div class="nivel-text"><div class="nivel-title" data-lang="es">Circulares y Resoluciones</div><div class="nivel-title" data-lang="en">Circulars & Resolutions</div><div class="nivel-desc" data-lang="es">Entidades de control y ministerios</div><div class="nivel-desc" data-lang="en">Control entities and ministries</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ RECURSOS JURÍDICOS ═══════════════════════════════════ -->
+<section class="recursos-section" id="recursos">
+  <div class="container">
+    <span class="section-badge" data-lang="es">Recursos & Fuentes Oficiales</span>
+    <span class="section-badge" data-lang="en">Official Legal Resources</span>
+    <h2 class="section-title" data-lang="es">Portal de Fuentes Jurídicas Colombianas</h2>
+    <h2 class="section-title" data-lang="en">Colombian Legal Sources Portal</h2>
+    <p class="section-sub" data-lang="es">Acceso directo a todas las fuentes oficiales del ordenamiento jurídico colombiano. Solo fuentes .gov.co — verificadas y organizadas por área. Un servicio de orientación para ciudadanos y clientes.</p>
+    <p class="section-sub" data-lang="en">Direct access to all official sources of the Colombian legal system. Only .gov.co sources — verified and organized by area. A guidance service for citizens and clients.</p>
+    <div class="recursos-tabs">
+      <button class="tab-btn active" onclick="showTab('legislacion',event)">📜 <span data-lang="es">Legislación</span><span data-lang="en">Legislation</span></button>
+      <button class="tab-btn" onclick="showTab('judicial',event)">⚖️ <span data-lang="es">Poder Judicial</span><span data-lang="en">Judiciary</span></button>
+      <button class="tab-btn" onclick="showTab('ministerios',event)">🏛️ <span data-lang="es">Ministerios</span><span data-lang="en">Ministries</span></button>
+      <button class="tab-btn" onclick="showTab('superintendencias',event)">🔍 <span data-lang="es">Entidades de Control</span><span data-lang="en">Control Entities</span></button>
+      <button class="tab-btn" onclick="showTab('congreso',event)">🗳️ <span data-lang="es">Congreso y Presidencia</span><span data-lang="en">Congress & Presidency</span></button>
+    </div>
+
+    <div id="tab-legislacion" class="tab-content active">
+      <div class="recursos-grid">
+        <a class="recurso-card" href="https://www.suin-juriscol.gov.co" target="_blank" rel="noopener"><div class="recurso-name">SUIN-Juriscol</div><div class="recurso-url">suin-juriscol.gov.co</div><div class="recurso-desc" data-lang="es">Leyes, decretos y códigos desde 1886. La fuente primaria para consultar toda la normatividad colombiana.</div><div class="recurso-desc" data-lang="en">Laws, decrees and codes since 1886. The primary source for all Colombian regulations.</div></a>
+        <a class="recurso-card" href="https://www.imprenta.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Diario Oficial — Imprenta Nacional</div><div class="recurso-url">imprenta.gov.co</div><div class="recurso-desc" data-lang="es">Publicación oficial de todas las normas. Determina la vigencia y entrada en vigor de leyes y decretos.</div><div class="recurso-desc" data-lang="en">Official publication of all regulations. Determines the effective date of laws and decrees.</div></a>
+        <a class="recurso-card" href="https://www.minjusticia.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio de Justicia y del Derecho</div><div class="recurso-url">minjusticia.gov.co</div><div class="recurso-desc" data-lang="es">Normatividad institucional, política criminal, estadísticas judiciales y documentos de política pública.</div><div class="recurso-desc" data-lang="en">Institutional regulations, criminal policy, judicial statistics and public policy documents.</div></a>
+        <a class="recurso-card" href="https://legalapp.minjusticia.gov.co" target="_blank" rel="noopener"><div class="recurso-name">LegalApp (MinJusticia)</div><div class="recurso-url">legalapp.minjusticia.gov.co</div><div class="recurso-desc" data-lang="es">Guías ciudadanas por área del derecho. Herramienta didáctica oficial para personas naturales.</div><div class="recurso-desc" data-lang="en">Citizen guides by area of law. Official educational tool for individuals.</div></a>
+      </div>
+    </div>
+
+    <div id="tab-judicial" class="tab-content">
+      <div class="recursos-grid">
+        <a class="recurso-card" href="https://www.ramajudicial.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Rama Judicial</div><div class="recurso-url">ramajudicial.gov.co</div><div class="recurso-desc" data-lang="es">Consulta de procesos judiciales en línea, códigos procesales y normativa que rige los despachos judiciales.</div><div class="recurso-desc" data-lang="en">Online judicial process search, procedural codes and regulations governing judicial offices.</div></a>
+        <a class="recurso-card" href="https://www.corteconstitucional.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Corte Constitucional</div><div class="recurso-url">corteconstitucional.gov.co</div><div class="recurso-desc" data-lang="es">Sentencias C, T y SU. Máxima autoridad en interpretación constitucional en Colombia.</div><div class="recurso-desc" data-lang="en">C, T and SU Rulings. Highest authority on constitutional interpretation in Colombia.</div></a>
+        <a class="recurso-card" href="https://www.cortesuprema.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Corte Suprema de Justicia</div><div class="recurso-url">cortesuprema.gov.co</div><div class="recurso-desc" data-lang="es">Salas Penal, Civil y Laboral. Jurisprudencia vinculante de la más alta corporación judicial ordinaria.</div><div class="recurso-desc" data-lang="en">Criminal, Civil and Labor Chambers. Binding jurisprudence from the highest ordinary judicial court.</div></a>
+        <a class="recurso-card" href="https://www.consejodeestado.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Consejo de Estado</div><div class="recurso-url">consejodeestado.gov.co</div><div class="recurso-desc" data-lang="es">Máximo tribunal contencioso-administrativo. Responsabilidad del Estado y nulidades administrativas.</div><div class="recurso-desc" data-lang="en">Highest administrative court. State liability and administrative nullities.</div></a>
+        <a class="recurso-card" href="https://www.fiscalia.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Fiscalía General de la Nación</div><div class="recurso-url">fiscalia.gov.co</div><div class="recurso-desc" data-lang="es">Procesos penales, doctrina penal y sistema acusatorio colombiano.</div><div class="recurso-desc" data-lang="en">Criminal proceedings, criminal doctrine and Colombia's accusatory system.</div></a>
+        <a class="recurso-card" href="https://www.procuraduria.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Procuraduría General de la Nación</div><div class="recurso-url">procuraduria.gov.co</div><div class="recurso-desc" data-lang="es">Derecho disciplinario, sanciones a servidores públicos e inhabilidades.</div><div class="recurso-desc" data-lang="en">Disciplinary law, sanctions against public officials and disqualifications.</div></a>
+        <a class="recurso-card" href="https://www.defensoria.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Defensoría del Pueblo</div><div class="recurso-url">defensoria.gov.co</div><div class="recurso-desc" data-lang="es">Derechos humanos, tutelas y orientación jurídica gratuita para la ciudadanía.</div><div class="recurso-desc" data-lang="en">Human rights, tutelas and free legal guidance for citizens.</div></a>
+        <a class="recurso-card" href="https://www.jep.gov.co" target="_blank" rel="noopener"><div class="recurso-name">JEP — Jurisdicción Especial para la Paz</div><div class="recurso-url">jep.gov.co</div><div class="recurso-desc" data-lang="es">Justicia transicional. Sometimiento, verdad, reparación y garantías de no repetición.</div><div class="recurso-desc" data-lang="en">Transitional justice. Submission, truth, reparation and non-repetition guarantees.</div></a>
+      </div>
+    </div>
+
+    <div id="tab-ministerios" class="tab-content">
+      <div class="recursos-grid">
+        <a class="recurso-card" href="https://www.mintrabajo.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio del Trabajo</div><div class="recurso-url">mintrabajo.gov.co</div><div class="recurso-desc" data-lang="es">Derecho laboral, seguridad social, inspección del trabajo y acoso laboral.</div><div class="recurso-desc" data-lang="en">Labor law, social security, workplace inspection and workplace harassment.</div></a>
+        <a class="recurso-card" href="https://www.minhacienda.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio de Hacienda y Crédito Público</div><div class="recurso-url">minhacienda.gov.co</div><div class="recurso-desc" data-lang="es">Política fiscal, tributaria y presupuestal. Marco normativo para el derecho tributario y financiero.</div><div class="recurso-desc" data-lang="en">Fiscal, tax and budget policy. Regulatory framework for tax and financial law.</div></a>
+        <a class="recurso-card" href="https://www.mincit.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio de Comercio, Industria y Turismo</div><div class="recurso-url">mincit.gov.co</div><div class="recurso-desc" data-lang="es">Derecho comercial, mercantil, inversión extranjera y registro mercantil.</div><div class="recurso-desc" data-lang="en">Commercial and mercantile law, foreign investment and commercial registry.</div></a>
+        <a class="recurso-card" href="https://www.minambiente.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio de Ambiente y Desarrollo Sostenible</div><div class="recurso-url">minambiente.gov.co</div><div class="recurso-desc" data-lang="es">Derecho ambiental, licencias, áreas protegidas y normativa SINA.</div><div class="recurso-desc" data-lang="en">Environmental law, licenses, protected areas and SINA regulations.</div></a>
+        <a class="recurso-card" href="https://www.minsalud.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio de Salud y Protección Social</div><div class="recurso-url">minsalud.gov.co</div><div class="recurso-desc" data-lang="es">Salud, seguridad social, EPS, ARL y normativa sanitaria colombiana.</div><div class="recurso-desc" data-lang="en">Health, social security, EPS, ARL and Colombian sanitary regulations.</div></a>
+        <a class="recurso-card" href="https://www.minvivienda.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio de Vivienda, Ciudad y Territorio</div><div class="recurso-url">minvivienda.gov.co</div><div class="recurso-desc" data-lang="es">Propiedad horizontal, urbanismo, VIS y normativa sobre vivienda.</div><div class="recurso-desc" data-lang="en">Horizontal property, urban planning, VIS and housing regulations.</div></a>
+        <a class="recurso-card" href="https://www.cancilleria.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Cancillería — Ministerio de Relaciones Exteriores</div><div class="recurso-url">cancilleria.gov.co</div><div class="recurso-desc" data-lang="es">Derecho internacional, visas, tratados, exequátur y normativa migratoria.</div><div class="recurso-desc" data-lang="en">International law, visas, treaties, exequatur and migration regulations.</div></a>
+        <a class="recurso-card" href="https://www.mininterior.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Ministerio del Interior</div><div class="recurso-url">mininterior.gov.co</div><div class="recurso-desc" data-lang="es">Consulta previa, partidos políticos, libertad religiosa y convivencia ciudadana.</div><div class="recurso-desc" data-lang="en">Prior consultation, political parties, religious freedom and civic coexistence.</div></a>
+      </div>
+    </div>
+
+    <div id="tab-superintendencias" class="tab-content">
+      <div class="recursos-grid">
+        <a class="recurso-card" href="https://www.supersociedades.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Supersociedades</div><div class="recurso-url">supersociedades.gov.co</div><div class="recurso-desc" data-lang="es">Inspección de sociedades, procesos de insolvencia empresarial y registro societario.</div><div class="recurso-desc" data-lang="en">Corporate inspection, business insolvency proceedings and corporate registry.</div></a>
+        <a class="recurso-card" href="https://www.sic.gov.co" target="_blank" rel="noopener"><div class="recurso-name">SIC — Superintendencia de Industria y Comercio</div><div class="recurso-url">sic.gov.co</div><div class="recurso-desc" data-lang="es">Competencia desleal, propiedad industrial, marcas, patentes y protección al consumidor. También supervisa el Habeas Data.</div><div class="recurso-desc" data-lang="en">Unfair competition, industrial property, trademarks, patents and consumer protection. Also supervises Habeas Data.</div></a>
+        <a class="recurso-card" href="https://www.superfinanciera.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Superintendencia Financiera de Colombia</div><div class="recurso-url">superfinanciera.gov.co</div><div class="recurso-desc" data-lang="es">Vigilancia del sistema financiero, bancos, seguros y regulación bursátil.</div><div class="recurso-desc" data-lang="en">Supervision of the financial system, banks, insurance and stock market regulation.</div></a>
+        <a class="recurso-card" href="https://www.supernotariado.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Supernotariado y Registro</div><div class="recurso-url">supernotariado.gov.co</div><div class="recurso-desc" data-lang="es">Registro de instrumentos públicos, notariado y tradición de bienes inmuebles.</div><div class="recurso-desc" data-lang="en">Registry of public instruments, notarial and real estate title transfer.</div></a>
+        <a class="recurso-card" href="https://www.dian.gov.co" target="_blank" rel="noopener"><div class="recurso-name">DIAN</div><div class="recurso-url">dian.gov.co</div><div class="recurso-desc" data-lang="es">Administración tributaria, aduanera y cambiaria. RUT, facturación electrónica.</div><div class="recurso-desc" data-lang="en">Tax, customs and foreign exchange administration. RUT, electronic invoicing.</div></a>
+        <a class="recurso-card" href="https://www.ugpp.gov.co" target="_blank" rel="noopener"><div class="recurso-name">UGPP</div><div class="recurso-url">ugpp.gov.co</div><div class="recurso-desc" data-lang="es">Gestión Pensional y Parafiscales. Controversias sobre seguridad social y aportes.</div><div class="recurso-desc" data-lang="en">Pension and Parafiscal Management. Social security and contribution disputes.</div></a>
+        <a class="recurso-card" href="https://www.unidadvictimas.gov.co" target="_blank" rel="noopener"><div class="recurso-name">UARIV — Unidad de Víctimas</div><div class="recurso-url">unidadvictimas.gov.co</div><div class="recurso-desc" data-lang="es">Registro Único de Víctimas (RUV), indemnización administrativa y reparación integral.</div><div class="recurso-desc" data-lang="en">Unique Victims Registry (RUV), administrative compensation and comprehensive reparation.</div></a>
+        <a class="recurso-card" href="https://www.icbf.gov.co" target="_blank" rel="noopener"><div class="recurso-name">ICBF</div><div class="recurso-url">icbf.gov.co</div><div class="recurso-desc" data-lang="es">Familia, infancia, adolescencia, adopción y restablecimiento de derechos.</div><div class="recurso-desc" data-lang="en">Family, childhood, adolescence, adoption and rights restoration.</div></a>
+      </div>
+    </div>
+
+    <div id="tab-congreso" class="tab-content">
+      <div class="recursos-grid">
+        <a class="recurso-card" href="https://www.presidencia.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Presidencia de la República</div><div class="recurso-url">presidencia.gov.co</div><div class="recurso-desc" data-lang="es">Decretos presidenciales, estados de excepción y normativa del Ejecutivo.</div><div class="recurso-desc" data-lang="en">Presidential decrees, states of emergency and Executive regulations.</div></a>
+        <a class="recurso-card" href="https://www.senado.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Senado de la República</div><div class="recurso-url">senado.gov.co</div><div class="recurso-desc" data-lang="es">Proyectos de ley, debates legislativos, votaciones y actos legislativos.</div><div class="recurso-desc" data-lang="en">Bills, legislative debates, voting and legislative acts.</div></a>
+        <a class="recurso-card" href="https://www.camara.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Cámara de Representantes</div><div class="recurso-url">camara.gov.co</div><div class="recurso-desc" data-lang="es">Leyes, proposiciones, debates de control político y presupuesto.</div><div class="recurso-desc" data-lang="en">Laws, propositions, political oversight debates and budget.</div></a>
+        <a class="recurso-card" href="https://www.registraduria.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Registraduría Nacional del Estado Civil</div><div class="recurso-url">registraduria.gov.co</div><div class="recurso-desc" data-lang="es">Registro civil, cédula de ciudadanía, procesos electorales y documentos de identidad.</div><div class="recurso-desc" data-lang="en">Civil registry, national ID, electoral processes and identity documents.</div></a>
+        <a class="recurso-card" href="https://www.contraloria.gov.co" target="_blank" rel="noopener"><div class="recurso-name">Contraloría General de la República</div><div class="recurso-url">contraloria.gov.co</div><div class="recurso-desc" data-lang="es">Control fiscal, gestión del erario y responsabilidad fiscal de servidores del Estado.</div><div class="recurso-desc" data-lang="en">Fiscal control, treasury management and fiscal liability of state officials.</div></a>
+        <a class="recurso-card" href="https://www.ant.gov.co" target="_blank" rel="noopener"><div class="recurso-name">ANT — Agencia Nacional de Tierras</div><div class="recurso-url">ant.gov.co</div><div class="recurso-desc" data-lang="es">Baldíos, titulación de tierras, reforma agraria y ordenamiento rural.</div><div class="recurso-desc" data-lang="en">Unused land, land titling, agrarian reform and rural land use planning.</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CONTACTO ═══════════════════════════════════ -->
+<section class="contacto-section" id="contacto">
+  <div class="container">
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <div class="gold-line"></div>
+        <span class="section-badge" data-lang="es">Contacto</span>
+        <span class="section-badge" data-lang="en">Contact</span>
+        <h2 data-lang="es">Hablemos de su Caso con la Discreción que Merece</h2>
+        <h2 data-lang="en">Let's Discuss your Case with the Discretion it Deserves</h2>
+        <p data-lang="es">La primera conversación es gratuita y completamente confidencial. Cuéntenos su situación y le trazaremos una ruta jurídica clara antes de cualquier compromiso formal.</p>
+        <p data-lang="en">The first conversation is free and completely confidential. Tell us your situation and we'll map a clear legal route before any formal commitment.</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="contact-icon">📱</div><div class="contact-text"><strong data-lang="es">WhatsApp & Teléfono</strong><strong data-lang="en">WhatsApp & Phone</strong><span>315 521 6814 · 319 246 0631</span></div></div>
+          <div class="contact-item"><div class="contact-icon">📧</div><div class="contact-text"><strong>Email</strong><span>fernan@aurydiaz.com</span></div></div>
+          <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-text"><strong data-lang="es">Sede Principal</strong><strong data-lang="en">Main Office</strong><span data-lang="es">Santiago de Cali, Valle del Cauca</span><span data-lang="en">Santiago de Cali, Valle del Cauca, Colombia</span></div></div>
+          <div class="contact-item"><div class="contact-icon">🌐</div><div class="contact-text"><strong data-lang="es">Atención Nacional e Internacional</strong><strong data-lang="en">National & International Service</strong><span data-lang="es">Virtual · Presencial · Desplazamiento</span><span data-lang="en">Virtual · In-person · On-site</span></div></div>
+        </div>
+        <div class="coverage-cities">
+          <span class="city-tag">📍 Cali</span><span class="city-tag">📍 Bogotá</span><span class="city-tag">📍 Medellín</span><span class="city-tag">📍 Barranquilla</span><span class="city-tag">📍 Villavicencio</span><span class="city-tag">🇺🇸 USA</span><span class="city-tag">🇬🇧 UK</span>
+        </div>
+      </div>
+      <div class="form-card">
+        <div id="form-content">
+          <h3 data-lang="es">Solicitar Valoración Estratégica</h3>
+          <h3 data-lang="en">Request Strategic Assessment</h3>
+          <p class="form-sub" data-lang="es">Información estrictamente confidencial — amparada por el secreto profesional.</p>
+          <p class="form-sub" data-lang="en">Strictly confidential information — protected by attorney-client privilege.</p>
+          <div class="form-row">
+            <div class="form-group"><label data-lang="es">Nombre Completo *</label><label data-lang="en">Full Name *</label><input type="text" id="f-nombre" placeholder="Su nombre"></div>
+            <div class="form-group"><label data-lang="es">Teléfono / WhatsApp *</label><label data-lang="en">Phone / WhatsApp *</label><input type="tel" id="f-tel" placeholder="+57 315 000 0000"></div>
+          </div>
+          <div class="form-group"><label data-lang="es">Correo Electrónico *</label><label data-lang="en">Email Address *</label><input type="email" id="f-email" placeholder="correo@ejemplo.com"></div>
+          <div class="form-group">
+            <label data-lang="es">País de Residencia</label>
+            <label data-lang="en">Country of Residence</label>
+            <select id="f-pais">
+              <option value="">— Seleccione / Select —</option>
+              <option>🇨🇴 Colombia</option><option>🇺🇸 Estados Unidos / USA</option><option>🇬🇧 Reino Unido / UK</option><option>🌎 Otro país / Other country</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-lang="es">Tipo de Consulta *</label>
+            <label data-lang="en">Inquiry Type *</label>
+            <select id="f-area">
+              <option value="">— Seleccione el área —</option>
+              <option>⚖️ Defensa Penal y Sistema Acusatorio</option>
+              <option>🏛️ Derecho Público y Disciplinario</option>
+              <option>📋 Litigio Civil y Responsabilidad</option>
+              <option>🏢 Derecho Comercial y Societario</option>
+              <option>💰 Derecho Tributario y Aduanero</option>
+              <option>👔 Derecho Laboral y Seguridad Social</option>
+              <option>👨‍👩‍👧 Derecho de Familia y Sucesiones</option>
+              <option>🔓 Insolvencia de Persona Natural</option>
+              <option>🌎 Representación Internacional</option>
+              <option>🛡️ Defensa de Historial Crediticio (Habeas Data)</option>
+              <option>🕊️ Justicia Transicional y DDHH</option>
+              <option>Otra consulta</option>
+            </select>
+          </div>
+          <div class="form-group"><label data-lang="es">Descripción del Caso *</label><label data-lang="en">Case Description *</label><textarea id="f-caso" placeholder="Describa brevemente su situación jurídica. Toda la información es confidencial. / Briefly describe your legal situation. All information is confidential."></textarea></div>
+          <div class="form-group">
+            <label data-lang="es">¿Cómo nos conoció?</label><label data-lang="en">How did you find us?</label>
+            <select><option value="">— Opcional / Optional —</option><option>Google / Internet</option><option data-lang="es">Recomendación personal</option><option data-lang="en">Personal recommendation</option><option>LinkedIn / Redes Sociales</option><option data-lang="es">Otro medio</option><option data-lang="en">Other</option></select>
+          </div>
+          <div class="form-checkbox"><input type="checkbox" id="privacidad"><label for="privacidad" data-lang="es">Acepto la <a href="#" onclick="openPolicy('privacidad');return false;">Política de Privacidad y Tratamiento de Datos Personales</a> conforme a la Ley 1581 de 2012 *</label><label for="privacidad" data-lang="en">I accept the <a href="#" onclick="openPolicy('privacidad');return false;">Privacy and Personal Data Treatment Policy</a> in accordance with Law 1581 of 2012 *</label></div>
+          <button class="btn-submit" onclick="submitForm()"><span data-lang="es">Enviar Solicitud de Valoración</span><span data-lang="en">Submit Assessment Request</span></button>
+        </div>
+        <div class="form-success" id="form-success">
+          <i class="fas fa-check-circle"></i>
+          <h4 data-lang="es">¡Solicitud Enviada Exitosamente!</h4>
+          <h4 data-lang="en">Request Sent Successfully!</h4>
+          <p data-lang="es">Nos comunicaremos con usted en menos de 24 horas. Toda su información es completamente confidencial.</p>
+          <p data-lang="en">We will contact you within 24 hours. All your information is completely confidential.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo" style="margin-bottom:14px; display:inline-flex;">
+          <div class="logo-text"><span class="logo-main" style="color:white;">Aury Díaz & Asociados</span><span class="logo-sub">Estudio Jurídico de Alta Estrategia</span></div>
+        </a>
+        <p data-lang="es">Defensa penal de élite y estrategia jurídica integral para Colombia y colombianos en el exterior. Liderados por un Magíster y Especialista en Derecho Penal con más de 10 años de litigio activo independiente.</p>
+        <p data-lang="en">Elite criminal defense and comprehensive legal strategy for Colombia and Colombians abroad. Led by a Master and Specialist in Criminal Law with over 10 years of active independent litigation.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-lang="es">Áreas de Práctica</h5>
+        <h5 data-lang="en">Practice Areas</h5>
+        <ul>
+          <li><a href="#areas" onclick="openModal('penal');return false;" data-lang="es">Defensa Penal</a><a href="#areas" onclick="openModal('penal');return false;" data-lang="en">Criminal Defense</a></li>
+          <li><a href="#areas" onclick="openModal('disciplinario');return false;" data-lang="es">Derecho Público</a><a href="#areas" onclick="openModal('disciplinario');return false;" data-lang="en">Public Law</a></li>
+          <li><a href="#areas" data-lang="es">Derecho Corporativo</a><a href="#areas" data-lang="en">Corporate Law</a></li>
+          <li><a href="#areas" data-lang="es">Derecho Laboral</a><a href="#areas" data-lang="en">Labor Law</a></li>
+          <li><a href="#areas" data-lang="es">Familia y Sucesiones</a><a href="#areas" data-lang="en">Family & Inheritance</a></li>
+          <li><a href="#servicios-estrategicos" data-lang="es">Representación Internacional</a><a href="#servicios-estrategicos" data-lang="en">International Representation</a></li>
+          <li><a href="#servicios-estrategicos" data-lang="es">Habeas Data Financiero</a><a href="#servicios-estrategicos" data-lang="en">Financial Habeas Data</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-lang="es">La Firma</h5>
+        <h5 data-lang="en">The Firm</h5>
+        <ul>
+          <li><a href="#director" data-lang="es">El Director</a><a href="#director" data-lang="en">The Director</a></li>
+          <li><a href="#director" data-lang="es">Red Of Counsel</a><a href="#director" data-lang="en">Of Counsel Network</a></li>
+          <li><a href="#soluciones" data-lang="es">Soluciones Integrales</a><a href="#soluciones" data-lang="en">Integrated Solutions</a></li>
+          <li><a href="#recursos" data-lang="es">Recursos Jurídicos</a><a href="#recursos" data-lang="en">Legal Resources</a></li>
+          <li><a href="#contacto" data-lang="es">Contacto</a><a href="#contacto" data-lang="en">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-lang="es">Contacto Inmediato</h5>
+        <h5 data-lang="en">Immediate Contact</h5>
+        <ul>
+          <li><a href="tel:+573155216814">📱 315 521 6814</a></li>
+          <li><a href="tel:+573192460631">📱 319 246 0631</a></li>
+          <li><a href="https://wa.me/573155216814" target="_blank">💬 WhatsApp</a></li>
+          <li><a href="mailto:fernan@aurydiaz.com">📧 fernan@aurydiaz.com</a></li>
+          <li><a href="#contacto">📍 Cali, Valle del Cauca</a></li>
+        </ul>
+        <div style="margin-top:18px;"><h5 data-lang="es">Cobertura</h5><h5 data-lang="en">Coverage</h5><p style="font-size:0.8rem; color:rgba(255,255,255,0.38); line-height:1.8;" data-lang="es">Cali · Bogotá · Medellín · Barranquilla<br>Villavicencio · USA · UK<br>Atención virtual en todo Colombia</p><p style="font-size:0.8rem; color:rgba(255,255,255,0.38); line-height:1.8;" data-lang="en">Cali · Bogotá · Medellín · Barranquilla<br>Villavicencio · USA · UK<br>Virtual service across all Colombia</p></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-lang="es">© 2025 Aury Díaz & Asociados — Todos los derechos reservados. Cali, Colombia.</p>
+      <p data-lang="en">© 2025 Aury Díaz & Asociados — All rights reserved. Cali, Colombia.</p>
+      <div class="footer-legal">
+        <a onclick="openPolicy('privacidad')" data-lang="es">Política de Privacidad</a>
+        <a onclick="openPolicy('privacidad')" data-lang="en">Privacy Policy</a>
+        <a onclick="openPolicy('terminos')" data-lang="es">Términos de Uso</a>
+        <a onclick="openPolicy('terminos')" data-lang="en">Terms of Use</a>
+        <a onclick="openPolicy('aviso')" data-lang="es">Aviso Legal</a>
+        <a onclick="openPolicy('aviso')" data-lang="en">Legal Notice</a>
+        <a onclick="openPolicy('cookies')" data-lang="es">Política de Cookies</a>
+        <a onclick="openPolicy('cookies')" data-lang="en">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/573155216814?text=Hola,%20deseo%20una%20consulta%20jurídica%20confidencial" target="_blank" title="WhatsApp Directo"><i class="fab fa-whatsapp"></i></a>
+
+<!-- ═══════════════════════════════════ MODALS — MACRO ÁREAS ═══════════════════════════════════ -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalIf(event)">
+  <div class="modal-box" id="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ POLICIES MODAL ═══════════════════════════════════ -->
+<div class="policies-modal" id="policies-modal" onclick="closePoliciesIf(event)">
+  <div class="policies-box" id="policies-box">
+    <button class="pol-close" onclick="closePolicies()">✕</button>
+    <div id="policies-content"></div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════ LANGUAGE ═══════════════════ */
+function setLang(lang) {
+  const body = document.getElementById('body-root');
+  body.classList.remove('lang-es','lang-en');
+  body.classList.add('lang-' + lang);
+  document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('html-root').lang = lang;
+  localStorage.setItem('preferredLang', lang);
+}
+
+// Auto-detect language on load
+(function(){
+  const saved = localStorage.getItem('preferredLang');
+  if(saved) { setLang(saved); return; }
+  const browser = navigator.language || 'es';
+  if(browser.startsWith('en')) setLang('en');
+})();
+
+/* ═══════════════════ MOBILE NAV ═══════════════════ */
+function toggleMobile() {
+  const nav = document.getElementById('mobile-nav');
+  const ham = document.getElementById('hamburger');
+  nav.classList.toggle('open');
+  ham.classList.toggle('open');
+}
+function closeMobile() {
+  document.getElementById('mobile-nav').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+
+/* ═══════════════════ HEADER SCROLL ═══════════════════ */
+window.addEventListener('scroll', () => {
+  const h = document.querySelector('header');
+  h.style.background = window.scrollY > 60 ? 'rgba(4,8,16,0.99)' : 'rgba(8,15,32,0.97)';
+});
+
+/* ═══════════════════ TABS ═══════════════════ */
+function showTab(tabId, ev) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tabId).classList.add('active');
+  if(ev && ev.currentTarget) ev.currentTarget.classList.add('active');
+}
+
+/* ═══════════════════ SMOOTH SCROLL ═══════════════════ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if(href === '#') return;
+    const target = document.querySelector(href);
+    if(target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
+  });
+});
+
+/* ═══════════════════ SCROLL REVEAL ═══════════════════ */
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold: 0.08});
+document.querySelectorAll('.reveal, .area-card, .sol-card, .service-feature, .credential-item, .recurso-card, .nivel').forEach(el => {
+  el.classList.add('reveal');
+  revealObserver.observe(el);
+});
+
+/* ═══════════════════ MODAL DATA ═══════════════════ */
+const modalData = {
+  macro1: {
+    badge_es: 'Macro-Área 01 — El Eje Central',
+    badge_en: 'Practice Area 01 — Core Expertise',
+    title_es: 'Litigios y Resolución de Conflictos',
+    title_en: 'Litigation & Conflict Resolution',
+    desc_es: 'Defensa estratégica en todas las instancias judiciales colombianas. Liderada directamente por Aury Fernán Díaz Alarcón, esta macro-área es el núcleo de la firma. Especialización penalista de alto nivel, respaldada por más de 10 años de litigio activo en el sistema acusatorio colombiano.',
+    desc_en: 'Strategic defense at all levels of Colombian courts. Led directly by Aury Fernán Díaz Alarcón, this is the firm\'s core practice area. Top-level criminal specialization backed by 10+ years of active litigation in the Colombian accusatory system.',
+    items_es: ['⚖️ Defensa Penal y Sistema Acusatorio — Ley 906/2004','Defensa técnica desde indagación hasta juicio oral','Preacuerdos y negociaciones — Arts. 348-354 CPP','Principio de oportunidad — Art. 324 CPP','Habeas corpus — Ley 1095/2006','Medidas de aseguramiento y sustitución','Delitos económicos: peculado, cohecho, fraude procesal','🏛️ Derecho Público y Disciplinario','Defensa ante la Procuraduría — Ley 1952/2019','Responsabilidad del Estado — CPACA Ley 1437/2011','Nulidades de actos administrativos','📋 Litigio Civil — CGP Ley 1564/2012','🕊️ Justicia Transicional — JEP Ley 1957/2019','🌎 Representación sin desplazamiento para no residentes'],
+    items_en: ['⚖️ Criminal Defense & Accusatory System — Law 906/2004','Technical defense from investigation to oral trial','Pre-agreements and negotiations — Arts. 348-354 CPP','Opportunity principle — Art. 324 CPP','Habeas corpus — Law 1095/2006','Precautionary measures and substitution','Economic crimes: embezzlement, bribery, procedural fraud','🏛️ Public & Disciplinary Law','Defense before the Procuraduría — Law 1952/2019','State Liability — CPACA Law 1437/2011','Administrative nullities','📋 Civil Litigation — CGP Law 1564/2012','🕊️ Transitional Justice — JEP Law 1957/2019','🌎 Representation without travel for non-residents'],
+    norm_es: 'Normatividad principal: Constitución Política 1991 · Ley 906 de 2004 (CPP) · Ley 599 de 2000 (CP) · Ley 1952 de 2019 (Disciplinario) · Ley 1437 de 2011 (CPACA) · Ley 1564 de 2012 (CGP) · Ley 1448 de 2011 (Víctimas)',
+    norm_en: 'Key regulations: 1991 Political Constitution · Law 906 of 2004 (CPP) · Law 599 of 2000 (CP) · Law 1952 of 2019 (Disciplinary) · Law 1437 of 2011 (CPACA) · Law 1564 of 2012 (CGP) · Law 1448 of 2011 (Victims)'
+  },
+  macro2: {
+    badge_es: 'Macro-Área 02 — Corporativo y Negocios',
+    badge_en: 'Practice Area 02 — Corporate & Business',
+    title_es: 'Derecho Corporativo y Negocios',
+    title_en: 'Corporate Law & Business',
+    desc_es: 'Protección jurídica integral para empresas, inversionistas y emprendedores en Colombia. Desde la constitución societaria hasta la defensa penal económica. Incluye la especialidad de Habeas Data Financiero para defensa de historial crediticio ante Datacrédito y TransUnion.',
+    desc_en: 'Comprehensive legal protection for companies, investors and entrepreneurs in Colombia. From corporate formation to economic criminal defense. Includes the specialty of Financial Habeas Data for credit history defense before Datacrédito and TransUnion.',
+    items_es: ['🏢 Constitución de SAS, S.A., Ltda. — Ley 1258/2008','Código de Comercio — Decreto 410/1971','Fusiones, escisiones y adquisiciones','Insolvencia empresarial — Ley 1116/2006','💰 Estatuto Tributario — Decreto 624/1989','Reforma tributaria — Ley 2277/2022','Defensa ante DIAN: sanciones y recursos','Régimen simple y facturación electrónica','💡 Registro de marcas y patentes — Decisión 486 CAN','Derechos de autor — Ley 23/1982','🏠 Propiedad Horizontal — Ley 675/2001','🛡️ Habeas Data Financiero — Ley 1581/2012 · Ley 1266/2008'],
+    items_en: ['🏢 Formation of SAS, S.A., Ltd. — Law 1258/2008','Commercial Code — Decree 410/1971','Mergers, spin-offs and acquisitions','Business insolvency — Law 1116/2006','💰 Tax Statute — Decree 624/1989','Tax reform — Law 2277/2022','Defense before DIAN: sanctions and appeals','Simple regime and electronic invoicing','💡 Trademark and patent registration — CAN Decision 486','Copyright — Law 23/1982','🏠 Horizontal Property — Law 675/2001','🛡️ Financial Habeas Data — Law 1581/2012 · Law 1266/2008'],
+    norm_es: 'Normatividad principal: Código de Comercio · Ley 1258/2008 (SAS) · Estatuto Tributario · Ley 1581/2012 (Habeas Data) · Ley 1266/2008 (Habeas Data Financiero) · Decisión 486 CAN (Prop. Industrial) · Ley 675/2001 (PH)',
+    norm_en: 'Key regulations: Commercial Code · Law 1258/2008 (SAS) · Tax Statute · Law 1581/2012 (Habeas Data) · Law 1266/2008 (Financial Habeas Data) · CAN Decision 486 (Industrial Property) · Law 675/2001 (HP)'
+  },
+  macro3: {
+    badge_es: 'Macro-Área 03 — Personas y Familias',
+    badge_en: 'Practice Area 03 — Persons & Families',
+    title_es: 'Derecho de las Personas y Familias',
+    title_en: 'Persons & Family Law',
+    desc_es: 'Acompañamiento jurídico integral en las decisiones más trascendentes de su vida personal, laboral y familiar. También incluye representación legal para colombianos en el exterior y servicios de insolvencia personal.',
+    desc_en: 'Comprehensive legal counsel for the most transcendent decisions in your personal, professional and family life. Also includes legal representation for Colombians abroad and personal insolvency services.',
+    items_es: ['👔 CST — Decreto 2663/1950: contratos laborales','Despido con y sin justa causa, liquidaciones','Acoso laboral — Ley 1010/2006','Fuero sindical, de maternidad, estabilidad reforzada','Pensiones, ARL, EPS y seguridad social','👨‍👩‍👧 Custodia, alimentos, divorcio, adopción','Unión marital de hecho — Ley 54/1990','Violencia intrafamiliar — Ley 294/1996','Sucesiones: intestada y testamentaria','🔓 Insolvencia personal — Arts. 531-576 CGP','Negociación de deudas y liquidación patrimonial','🌎 Colombianos en USA, UK u otros países'],
+    items_en: ['👔 CST — Decree 2663/1950: employment contracts','Termination with and without cause, severance','Workplace harassment — Law 1010/2006','Union, maternity and reinforced employment protections','Pensions, ARL, EPS and social security','👨‍👩‍👧 Custody, alimony, divorce, adoption','Common-law union — Law 54/1990','Domestic violence — Law 294/1996','Estates: intestate and testamentary','🔓 Personal insolvency — Arts. 531-576 CGP','Debt negotiation and asset liquidation','🌎 Colombians in USA, UK or other countries'],
+    norm_es: 'Normatividad principal: CST Decreto 2663/1950 · Código Civil · Ley 100/1993 (SS) · Ley 1098/2006 (Infancia) · Ley 1257/2008 (Género) · CGP Arts. 531-576 (Insolvencia) · Ley 1997/2019 (Migración)',
+    norm_en: 'Key regulations: CST Decree 2663/1950 · Civil Code · Law 100/1993 (SS) · Law 1098/2006 (Childhood) · Law 1257/2008 (Gender) · CGP Arts. 531-576 (Insolvency) · Law 1997/2019 (Migration)'
+  }
+};
+
+function openModal(id) {
+  const data = modalData[id];
+  if(!data) { document.getElementById('modal-overlay').classList.add('open'); document.getElementById('modal-content').innerHTML = '<p style="color:white">Contenido próximamente.</p>'; return; }
+  const lang = document.body.classList.contains('lang-en') ? 'en' : 'es';
+  const items = (lang === 'en' ? data.items_en : data.items_es).map((i,idx) => {
+    const featured = idx < 2;
+    return `<li class="${featured?'featured':''}">${i}</li>`;
+  }).join('');
+  document.getElementById('modal-content').innerHTML = `
+    <div class="modal-badge">${data['badge_'+lang]}</div>
+    <div class="modal-title">${data['title_'+lang]}</div>
+    <div class="modal-desc">${data['desc_'+lang]}</div>
+    <ul class="modal-list">${items}</ul>
+    <div class="modal-norm"><h5>${lang==='es'?'Marco Normativo':'Legal Framework'}</h5><p>${data['norm_'+lang]}</p></div>
+    <a href="#contacto" class="modal-cta" onclick="closeModal()">${lang==='es'?'Consultar este Caso →':'Consult this Case →'}</a>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeModalIf(e) { if(e.target === document.getElementById('modal-overlay')) closeModal(); }
+
+/* ═══════════════════ POLICIES ═══════════════════ */
+const policyContent = {
+  privacidad: {
+    title: 'Política de Privacidad y Tratamiento de Datos Personales',
+    date: 'Última actualización: Enero 2025',
+    content: `
+      <h3>1. Responsable del Tratamiento</h3>
+      <p>Aury Díaz & Asociados, liderado por Aury Fernán Díaz Alarcón, con domicilio en la ciudad de Santiago de Cali, Valle del Cauca, Colombia. Correo: fernan@aurydiaz.com</p>
+      <h3>2. Fundamento Legal</h3>
+      <p>Esta política se rige por la <strong>Ley 1581 de 2012</strong> de Protección de Datos Personales, el <strong>Decreto 1377 de 2013</strong> y demás normas concordantes. Para clientes internacionales, también se consideran los principios del <strong>GDPR</strong> (Reglamento Europeo) y las regulaciones aplicables en EE.UU.</p>
+      <h3>3. Datos que Recopilamos</h3>
+      <p>Recopilamos únicamente los datos necesarios para prestar el servicio jurídico: nombre, teléfono, correo electrónico, país de residencia y descripción del asunto jurídico. No recopilamos datos sensibles sin consentimiento expreso.</p>
+      <h3>4. Finalidad del Tratamiento</h3>
+      <ul><li>Prestación de servicios jurídicos contratados</li><li>Comunicación sobre el estado de los asuntos</li><li>Envío de información jurídica relevante (con opción de cancelación)</li><li>Cumplimiento de obligaciones legales profesionales</li></ul>
+      <h3>5. Secreto Profesional</h3>
+      <p>Toda la información proporcionada está protegida por el <strong>secreto profesional del abogado</strong>, conforme al artículo 28 del Código Disciplinario del Abogado. Esta protección es absoluta e inviolable.</p>
+      <h3>6. Derechos del Titular</h3>
+      <p>Usted tiene derecho a: conocer, actualizar, rectificar, suprimir sus datos y revocar la autorización. Puede ejercerlos escribiendo a fernan@aurydiaz.com.</p>
+      <h3>7. Habeas Data</h3>
+      <p>Para solicitar la baja o modificación de sus datos, envíe comunicación escrita a fernan@aurydiaz.com. Responderemos en un plazo máximo de 15 días hábiles conforme a la Ley 1581 de 2012.</p>
+    `
+  },
+  terminos: {
+    title: 'Términos de Uso del Sitio Web',
+    date: 'Última actualización: Enero 2025',
+    content: `
+      <h3>1. Naturaleza del Contenido</h3>
+      <p>El contenido de este sitio web tiene carácter <strong>informativo y educativo</strong>. No constituye asesoría jurídica. Cada caso tiene sus propias particularidades y requiere análisis profesional individualizado.</p>
+      <h3>2. Relación Abogado-Cliente</h3>
+      <p>La relación profesional abogado-cliente solo se establece mediante contrato de prestación de servicios jurídicos debidamente suscrito. El formulario de contacto no crea dicha relación.</p>
+      <h3>3. Propiedad Intelectual</h3>
+      <p>Todos los contenidos del sitio (textos, diseño, marca Aury Díaz & Asociados) son propiedad exclusiva de Aury Fernán Díaz Alarcón. Queda prohibida su reproducción sin autorización expresa.</p>
+      <h3>4. Limitación de Responsabilidad</h3>
+      <p>Aury Díaz & Asociados no se responsabiliza por decisiones tomadas con base en el contenido informativo del sitio sin haber obtenido asesoría jurídica formal y personalizada.</p>
+      <h3>5. Ley Aplicable</h3>
+      <p>Este sitio se rige por las leyes de la República de Colombia. Para asuntos con elementos internacionales, se aplicarán los tratados y convenios internacionales vigentes.</p>
+    `
+  },
+  aviso: {
+    title: 'Aviso Legal',
+    date: 'Enero 2025',
+    content: `
+      <h3>Identificación del Titular</h3>
+      <p><strong>Razón Social:</strong> Aury Díaz & Asociados<br><strong>Propietario:</strong> Aury Fernán Díaz Alarcón<br><strong>Tarjeta Profesional:</strong> Abogado inscrito ante el Consejo Superior de la Judicatura<br><strong>Domicilio:</strong> Santiago de Cali, Valle del Cauca, Colombia<br><strong>Contacto:</strong> fernan@aurydiaz.com</p>
+      <h3>Ejercicio Profesional</h3>
+      <p>El Dr. Aury Fernán Díaz Alarcón ejerce la abogacía de manera independiente, regulado por la <strong>Ley 1123 de 2007</strong> (Código Disciplinario del Abogado) y sometido a la ética y deontología profesional.</p>
+      <h3>Conflicto de Intereses</h3>
+      <p>Aury Díaz & Asociados no ha estado ni está vinculado a ninguna entidad pública o privada que pueda generar conflictos de interés. Toda representación se realiza con plena independencia.</p>
+      <h3>Confidencialidad</h3>
+      <p>El secreto profesional es un deber irrenunciable del abogado. Toda información recibida de clientes o potenciales clientes es estrictamente confidencial.</p>
+    `
+  },
+  cookies: {
+    title: 'Política de Cookies',
+    date: 'Enero 2025',
+    content: `
+      <h3>¿Qué son las Cookies?</h3>
+      <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita nuestro sitio web. Nos permiten mejorar su experiencia de navegación.</p>
+      <h3>Cookies que Utilizamos</h3>
+      <ul>
+        <li><strong>Cookies técnicas (esenciales):</strong> Necesarias para el funcionamiento básico del sitio. No requieren consentimiento.</li>
+        <li><strong>Cookie de idioma:</strong> Almacena su preferencia de idioma (español/inglés). Se guarda en localStorage.</li>
+        <li><strong>Cookies de análisis:</strong> Si se activan, nos ayudan a entender cómo se usa el sitio (Google Analytics). Requieren su consentimiento.</li>
+      </ul>
+      <h3>Base Legal</h3>
+      <p>La gestión de cookies se realiza conforme a la <strong>Ley 1581 de 2012</strong> y los estándares internacionales aplicables.</p>
+      <h3>Gestión de Cookies</h3>
+      <p>Puede configurar su navegador para bloquear o eliminar cookies. Esto puede afectar la funcionalidad del sitio. Para más información sobre gestión de cookies, visite la ayuda de su navegador.</p>
+      <h3>Contacto</h3>
+      <p>Para consultas sobre cookies: fernan@aurydiaz.com</p>
+    `
+  }
+};
+
+function openPolicy(id) {
+  const data = policyContent[id];
+  if(!data) return;
+  document.getElementById('policies-content').innerHTML = `
+    <h2>${data.title}</h2>
+    <p class="policy-date">${data.date}</p>
+    ${data.content}
+  `;
+  document.getElementById('policies-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closePolicies() {
+  document.getElementById('policies-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closePoliciesIf(e) { if(e.target === document.getElementById('policies-modal')) closePolicies(); }
+
+/* ═══════════════════ FORM SUBMIT ═══════════════════ */
+function submitForm() {
+  const nombre = document.getElementById('f-nombre').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const area = document.getElementById('f-area').value;
+  const caso = document.getElementById('f-caso').value.trim();
+  const privacidad = document.getElementById('privacidad').checked;
+  const lang = document.body.classList.contains('lang-en') ? 'en' : 'es';
+
+  if(!nombre || !email || !area || !caso) {
+    alert(lang === 'es' ? 'Por favor complete todos los campos obligatorios (*)' : 'Please fill in all required fields (*)');
+    return;
+  }
+  if(!privacidad) {
+    alert(lang === 'es' ? 'Debe aceptar la Política de Privacidad para continuar.' : 'You must accept the Privacy Policy to continue.');
+    return;
+  }
+
+  // Build mailto link
+  const tel = document.getElementById('f-tel').value;
+  const pais = document.getElementById('f-pais').value;
+  const subject = encodeURIComponent(`Consulta Jurídica — ${area} — ${nombre}`);
+  const body = encodeURIComponent(`NUEVA CONSULTA JURÍDICA\n\nNombre: ${nombre}\nTeléfono: ${tel}\nEmail: ${email}\nPaís: ${pais}\nÁrea: ${area}\n\nDescripción del caso:\n${caso}\n\n---\nEnviado desde www.aurydiaz.com`);
+
+  // Open mailto
+  window.location.href = `mailto:auryfernandiaz@gmail.com?cc=fernan@aurydiaz.com&subject=${subject}&body=${body}`;
+
+  // Show success
+  document.getElementById('form-content').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+
+/* ═══════════════════ KEYBOARD ESC ═══════════════════ */
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') { closeModal(); closePolicies(); }
+});
+</script>
+</body>
+</html>
