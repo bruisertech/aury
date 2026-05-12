@@ -2,29 +2,29 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/es/index.html">
+    <meta http-equiv="refresh" content="0; url=./es/index.html">
     <title>Redirigiendo / Redirecting...</title>
-    <script src="/assets/js/lang-switcher.js"></script>
+    <script src="./assets/js/lang-switcher.js"></script>
     <script>
         // Use logic from lang-switcher if js is enabled
         document.addEventListener('DOMContentLoaded', () => {
             const saved = localStorage.getItem('preferredLang');
             if (saved === 'en') {
-                window.location.replace('/en/index.html');
+                window.location.replace('./en/index.html');
             } else if (saved === 'es') {
-                window.location.replace('/es/index.html');
+                window.location.replace('./es/index.html');
             } else {
                 const browserLang = navigator.language || 'es';
                 if (browserLang.startsWith('en')) {
-                    window.location.replace('/en/index.html');
+                    window.location.replace('./en/index.html');
                 } else {
-                    window.location.replace('/es/index.html');
+                    window.location.replace('./es/index.html');
                 }
             }
         });
     </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="/es/index.html">link to the Spanish site</a> or this <a href="/en/index.html">link to the English site</a>.</p>
+    <p>If you are not redirected automatically, follow this <a href="./es/index.html">link to the Spanish site</a> or this <a href="./en/index.html">link to the English site</a>.</p>
 </body>
 </html>

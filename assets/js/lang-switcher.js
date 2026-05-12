@@ -4,6 +4,7 @@
 const routeMap = {
     // Inicio y raíz
     '/': '/en/index.html',
+    '/index.html': '/en/index.html',
     '/es/': '/en/index.html',
     '/en/': '/es/index.html',
     '/es/index.html': '/en/index.html',
@@ -47,24 +48,38 @@ function switchLanguage(targetLang) {
     const currentPath = window.location.pathname;
     const currentHash = window.location.hash;
 
-    // Find if the current path exists in our map
-    let targetPath = '/';
-
-    // Exact match or normalize it
-    // Verify if the current path already matches the target language.
-    const isCurrentlyEn = currentPath.startsWith('/en/');
-    const isCurrentlyEs = currentPath.startsWith('/es/');
+    const isCurrentlyEn = currentPath.indexOf('/en/') !== -1;
+    const isCurrentlyEs = currentPath.indexOf('/es/') !== -1;
 
     if ((targetLang === 'en' && isCurrentlyEn) || (targetLang === 'es' && isCurrentlyEs)) {
-        // User clicked the language they are already on.
-        return;
+        return; // Already on the correct language
     }
 
-    if (routeMap[currentPath]) {
-        targetPath = routeMap[currentPath];
+    // Try to normalize the path by stripping the root path (useful for GH pages)
+    let normalizedCheckPath = currentPath;
+    let rootPath = '';
+
+    if (isCurrentlyEs) {
+        const idx = currentPath.indexOf('/es/');
+        rootPath = currentPath.substring(0, idx);
+        normalizedCheckPath = currentPath.substring(idx);
+    } else if (isCurrentlyEn) {
+        const idx = currentPath.indexOf('/en/');
+        rootPath = currentPath.substring(0, idx);
+        normalizedCheckPath = currentPath.substring(idx);
+    } else {
+        const lastSlash = currentPath.lastIndexOf('/');
+        rootPath = currentPath.substring(0, lastSlash);
+        normalizedCheckPath = '/' + currentPath.substring(lastSlash + 1);
+    }
+
+    let targetPath = '/';
+
+    if (routeMap[normalizedCheckPath]) {
+        targetPath = routeMap[normalizedCheckPath];
     } else {
         // Fallback checks
-        let normalizedPath = currentPath;
+        let normalizedPath = normalizedCheckPath;
         if (!normalizedPath.endsWith('.html') && !normalizedPath.endsWith('/')) {
              normalizedPath += '/';
         }
@@ -72,7 +87,6 @@ function switchLanguage(targetLang) {
         if (routeMap[normalizedPath]) {
             targetPath = routeMap[normalizedPath];
         } else {
-            // Default fallbacks if page not found in dictionary
             if (targetLang === 'en') {
                 targetPath = '/en/index.html';
             } else {
@@ -81,26 +95,27 @@ function switchLanguage(targetLang) {
         }
     }
 
-    // Redirect
-    window.location.href = targetPath + currentHash;
+    window.location.href = rootPath + targetPath + currentHash;
 }
 
 // Auto-detect and redirect on root index.html
 document.addEventListener('DOMContentLoaded', () => {
-    const isRoot = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    const isEs = window.location.pathname.indexOf('/es/') !== -1;
+    const isEn = window.location.pathname.indexOf('/en/') !== -1;
 
-    if (isRoot) {
+    // Only redirect if we are not in an es/ or en/ subfolder (meaning we are at the root)
+    if (!isEs && !isEn) {
         const saved = localStorage.getItem('preferredLang');
         if (saved === 'en') {
-            window.location.replace('/en/index.html');
+            window.location.replace('./en/index.html');
         } else if (saved === 'es') {
-            window.location.replace('/es/index.html');
+            window.location.replace('./es/index.html');
         } else {
             const browserLang = navigator.language || 'es';
             if (browserLang.startsWith('en')) {
-                window.location.replace('/en/index.html');
+                window.location.replace('./en/index.html');
             } else {
-                window.location.replace('/es/index.html');
+                window.location.replace('./es/index.html');
             }
         }
     }
